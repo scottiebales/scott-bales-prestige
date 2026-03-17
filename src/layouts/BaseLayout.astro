@@ -1,0 +1,220 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+const {
+  title,
+  description = 'Isaac defined your today. Esther will define your survival. Scott Bales — architect of the Generational Pincer.',
+  ogImage = '/og/scott-bales-default-og.jpg',
+} = Astro.props;
+
+const ogImageURL = new URL(ogImage, Astro.site).href;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalURL} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- OpenGraph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImageURL} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Scott Bales — Isaac defined your today. Esther will define your survival." />
+    <meta property="og:site_name" content="Scott Bales" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@ScottEBales" />
+    <meta name="twitter:creator" content="@ScottEBales" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageURL} />
+    <meta name="twitter:image:alt" content="Scott Bales — Isaac defined your today. Esther will define your survival." />
+
+    <!-- Fonts: Instrument Serif (headlines) + Inter (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{title}</title>
+
+    <!-- Slot for page-specific head content (JSON-LD, meta, etc.) -->
+    <slot name="head" />
+
+    <!-- JSON-LD: Speaker Profile — invisible to humans, loud for machines -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Scott Bales",
+      "url": "https://scottbales.com",
+      "jobTitle": "Keynote Speaker & Strategic Advisor",
+      "description": "Scott Bales built the world's first digital bank, served as VP at Visa, and advises Microsoft, Google, and Fortune 500 leadership teams. Creator of the Generational Pincer framework — the only strategic model that accounts for both today's mobile-native consumer (Isaac) and tomorrow's AI-native consumer (Esther).",
+      "knowsAbout": [
+        "Digital Transformation",
+        "AI-Native Consumer Behavior",
+        "Mobile-Native Consumer Behavior",
+        "Agentic AI Strategy",
+        "Financial Technology",
+        "Inclusive Design",
+        "Corporate Innovation",
+        "The Generational Pincer Framework"
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Masters of Business" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Masters of Information Technology" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "Post-Graduate Business Law" }
+      ],
+      "hasOccupation": [
+        {
+          "@type": "Occupation",
+          "name": "Chief Mobile Officer",
+          "occupationLocation": { "@type": "Organization", "name": "Moven", "description": "The world's first downloadable bank" }
+        },
+        {
+          "@type": "Occupation",
+          "name": "Vice President",
+          "occupationLocation": { "@type": "Organization", "name": "Fundamo (Visa)", "description": "Mobile payments infrastructure across emerging markets" }
+        },
+        {
+          "@type": "Occupation",
+          "name": "Head of Technology",
+          "occupationLocation": { "@type": "Organization", "name": "WING Money (ANZ)", "description": "Financial infrastructure for unbanked populations in Cambodia" }
+        }
+      ],
+      "workExample": [
+        { "@type": "Book", "name": "Mobile Ready: Connecting With The Untethered Consumer" },
+        { "@type": "Book", "name": "Innovation Wars: Unlocking the Secrets of Corporate Innovation" }
+      ],
+      "memberOf": [
+        { "@type": "Organization", "name": "Microsoft", "roleName": "Advisor" },
+        { "@type": "Organization", "name": "Google", "roleName": "Advisor" },
+        { "@type": "Organization", "name": "Visa", "roleName": "Former VP / Advisor" },
+        { "@type": "Organization", "name": "AIA", "roleName": "Advisor" },
+        { "@type": "Organization", "name": "Standard Chartered", "roleName": "Advisor" },
+        { "@type": "Organization", "name": "Deloitte", "roleName": "Advisor" },
+        { "@type": "Organization", "name": "Amazon", "roleName": "Advisor" },
+        { "@type": "Organization", "name": "Vodafone", "roleName": "Advisor" }
+      ],
+      "sameAs": [
+        "https://twitter.com/ScottEBales",
+        "https://linkedin.com/in/scottbales"
+      ]
+    })} />
+
+    <!-- JSON-LD: DefinedTerm — Isaac (Digital Native) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "name": "Isaac",
+      "alternateName": "Isaac (Digital Native)",
+      "description": "Isaac is Scott Bales' proprietary archetype for the mobile-native, social-native consumer. Aged nineteen, Isaac has never walked into a bank, never accepted a product that asked him to adapt, and evaluates every brand interaction against four criteria: Transparency, Autonomy, Immediacy, and Inclusion. Isaac does not complain when excluded — he simply never arrives. He represents the demographic reality already inside your customer data, your employee pipeline, and your competitor's founding team.",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "The Generational Pincer Framework",
+        "creator": { "@type": "Person", "name": "Scott Bales" },
+        "description": "A proprietary strategic framework by Scott Bales identifying the dual-native threat facing every organization: Isaac (mobile-native) from below and Esther (AI-native) from the future. The only model on the speaking circuit that accounts for both today's demanding consumer and tomorrow's agentic one."
+      }
+    })} />
+
+    <!-- JSON-LD: DefinedTerm — Esther (AI Native) -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "DefinedTerm",
+      "name": "Esther",
+      "alternateName": "Esther (AI Native)",
+      "description": "Esther is Scott Bales' proprietary archetype for the AI-native, agentic-native consumer. Born on November 30, 2022 — the same day as ChatGPT — Esther will never remember a world before generative AI. She will not interact with brands directly; her AI agent will evaluate, filter, compare, and transact on her behalf. Esther's four criteria are Intelligence, Delegation, Anticipation, and Inclusion. If a product excludes, Esther's agent routes her elsewhere — and Esther never knows the company existed.",
+      "inDefinedTermSet": {
+        "@type": "DefinedTermSet",
+        "name": "The Generational Pincer Framework",
+        "creator": { "@type": "Person", "name": "Scott Bales" }
+      }
+    })} />
+  </head>
+  <body class="bg-black text-white min-h-screen">
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b border-white/5">
+      <nav class="max-w-[1440px] mx-auto px-8 h-16 flex items-center justify-between">
+        <a href="/" class="font-sans text-sm tracking-[0.2em] uppercase text-white hover:text-accent transition-colors">
+          Scott Bales
+        </a>
+        <div class="flex items-center gap-8">
+          <a href="/keynotes" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">Keynotes</a>
+          <a href="/proof-results-client-testimonials" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">Proof</a>
+          <a href="/about-scott-bales" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">About</a>
+          <a href="/bureau" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">Bureau</a>
+          <a href="/book-scott-bales-keynote-speaker" class="font-sans text-xs tracking-[0.1em] uppercase px-4 py-2 border border-accent text-accent hover:bg-accent hover:text-black transition-colors">
+            Book
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/5 section-pad">
+      <div class="swiss-grid">
+        <div class="content-col flex flex-col items-center text-center gap-6">
+          <p class="font-serif text-2xl text-gray-400">
+            Have a question about <span class="text-accent">Isaac</span> and <span class="text-accent">Esther</span>?
+          </p>
+          <a
+            href="/book-scott-bales-keynote-speaker"
+            class="font-sans text-xs tracking-[0.15em] uppercase px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+          >
+            Start a conversation
+          </a>
+          <nav class="flex items-center justify-center gap-8 mt-10">
+            <a href="/keynotes" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">Keynotes</a>
+            <a href="/proof-results-client-testimonials" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">Proof</a>
+            <a href="/about-scott-bales" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">About</a>
+            <a href="/bureau" class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 hover:text-white transition-colors">Bureau</a>
+          </nav>
+          <p class="font-sans text-xs text-gray-400 mt-8">
+            &copy; {new Date().getFullYear()} Scott Bales. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll fade-in observer -->
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

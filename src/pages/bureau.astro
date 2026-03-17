@@ -1,0 +1,426 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const keynoteTopics = [
+  { num: 1, title: 'Are You Ready for Isaac?', duration: '45–60 min', format: 'Keynote', line: 'The mobile-native consumer who expects more than your organization delivers.' },
+  { num: 2, title: 'Are You Ready for Esther?', duration: '45–60 min', format: 'Keynote', line: 'The AI-native born the same day as ChatGPT who will never interact with your brand directly.' },
+  { num: 3, title: 'The Generational Pincer', duration: '60–90 min', format: 'Keynote / Executive Briefing', line: 'Isaac and Esther together. The dual-native thesis. Scott\'s signature.' },
+  { num: 4, title: 'Recode Leadership', duration: '45–60 min', format: 'Keynote', line: 'The leaders Isaac trusts and Esther\'s agent evaluates look nothing like yours.' },
+  { num: 5, title: 'Innovation Wars', duration: '45–60 min', format: 'Keynote', line: 'Why 65% of corporate innovation programs fail — and the framework that fixes it.' },
+  { num: 6, title: 'The Future of Work', duration: '45–60 min', format: 'Keynote', line: 'Isaac is your next employee. Esther is your next employee\'s AI co-pilot.' },
+  { num: 7, title: 'Smart Cities & Digital Citizens', duration: '45–60 min', format: 'Keynote', line: 'Isaac expects smart cities. Esther expects cities that anticipate.' },
+  { num: 8, title: 'Empowering Potential', duration: '45–60 min', format: 'Keynote', line: 'Jenson is why Isaac matters. Jenson is why Esther\'s AI will refuse to exclude.' },
+];
+
+const avRequirements = [
+  { req: 'Microphone', spec: 'Wireless lavalier (DPA 4088 or equivalent) as primary. Wireless handheld backup. No podium mic.' },
+  { req: 'Monitors', spec: 'Confidence monitor at stage front. Minimum 40" at 10ft distance.' },
+  { req: 'Projection', spec: 'Minimum 1080p. 16:9. Laser projector preferred. Visible from all seats.' },
+  { req: 'Slides', spec: 'Final deck in 16:9 PDF and Keynote format, 48 hours before event. No PowerPoint conversion without approval.' },
+  { req: 'Stage Lighting', spec: 'Front wash. No colored gels. No moving heads. Clean white or warm white only.' },
+  { req: 'Stage', spec: 'Open stage. No podium. No lectern. Minimum 20ft wide, 12ft deep. Hardwood or matte-finish. No carpet.' },
+  { req: 'Recording', spec: 'Internal use only. External distribution requires separate written agreement.' },
+  { req: 'Internet', spec: 'Hardwired ethernet backup at tech desk. WiFi not acceptable as primary for live demos.' },
+  { req: 'Sound Check', spec: 'Minimum 30 minutes, scheduled no less than 2 hours before audience entry.' },
+];
+
+const travelSpecs = [
+  { field: 'Base', detail: 'Singapore' },
+  { field: 'Availability', detail: 'Global. All time zones. 48-week calendar.' },
+  { field: 'Travel Class', detail: 'Business class over 4 hours. Economy under 4 hours.' },
+  { field: 'Advance Booking', detail: 'Minimum 4 weeks. 8+ weeks preferred for international.' },
+  { field: 'Travel Days', detail: 'One day before, one day after. No same-day arrivals for keynotes.' },
+  { field: 'Accommodation', detail: '4-star minimum. Quiet room. Late checkout on departure day.' },
+  { field: 'Ground Transport', detail: 'Private transfer airport-to-hotel and hotel-to-venue. No shared shuttles.' },
+];
+---
+
+<BaseLayout title="Bureau Hub — Speaker Spec Sheet | Scott Bales" description="Technical spec sheet for speaker bureau agents and event coordinators. Bios, keynote topics, pricing, and technical rider for Scott Bales.">
+
+  <!-- ════════════════════════════════════════════════════════
+       HEADER — Document Classification
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">Bureau Hub</p>
+        <h1 class="font-serif text-4xl md:text-6xl mb-6">Speaker Spec Sheet</h1>
+        <p class="font-sans text-base text-gray-400 leading-relaxed max-w-2xl">
+          For speaker bureau agents, event coordinators, and internal L&amp;D procurement.
+          Copy-paste ready. No narrative. Pure logistics.
+        </p>
+        <div class="flex gap-4 mt-8">
+          <a href="/book-scott-bales-keynote-speaker" class="font-sans text-xs tracking-[0.1em] uppercase px-5 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition-colors">
+            Book Scott Bales
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 1 — THE PITCH
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">01 — The Pitch</p>
+
+        <div class="mb-12">
+          <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-4">Proposal Copy — Standard</p>
+          <div class="border-l-2 border-white/10 pl-6">
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Scott Bales has spent twenty years building what most speakers only describe — the world's first digital bank, mobile financial infrastructure across emerging markets, and AI transformation strategies for organizations including Microsoft, Google, and Visa. That work produced a thesis no other speaker on the circuit delivers: the <span class="text-white">Generational Pincer</span>. Your customers are caught between <span class="text-accent">Isaac</span>, the mobile-native consumer who already expects more than most organizations deliver, and <span class="text-accent">Esther</span>, born the same day as ChatGPT, the AI-native who will never interact with a brand directly — only through agents that filter, compare, and choose on her behalf. One is your problem today. The other is your existential risk tomorrow.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-4">Proposal Copy — Ultra-Short <span class="text-gray-400/40 ml-2">50 words</span></p>
+          <div class="border-l-2 border-white/10 pl-6">
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Scott Bales built the world's first digital bank and advises Microsoft, Google, and Visa on what comes next. His proprietary Generational Pincer framework — <span class="text-accent">Isaac</span> (mobile native) and <span class="text-accent">Esther</span> (AI native, born the day ChatGPT launched) — is the strategic briefing your leadership team cannot get anywhere else.
+            </p>
+          </div>
+        </div>
+
+        <p class="font-sans text-xs text-gray-400/40 mt-8 italic">Bureau agents may use verbatim in proposals and pitch decks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 2 — BIO LENGTHS
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">02 — Speaker Bio</p>
+        <p class="font-sans text-xs text-gray-400/60 mb-10">Select the appropriate length. Do not edit without approval.</p>
+
+        <!-- 50-word -->
+        <div class="mb-10 p-6 border border-white/5">
+          <div class="flex items-baseline justify-between mb-4">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-white">50 Words</p>
+            <span class="font-sans text-xs text-gray-400/40">Email / One-pager</span>
+          </div>
+          <p class="font-sans text-sm text-gray-400 leading-relaxed">
+            Scott Bales built the world's first digital bank, served as VP at Visa, and has advised Microsoft, Google, and Deloitte on navigating technology-driven transformation. His Generational Pincer framework — Isaac and Esther — gives leadership teams the only strategic model that accounts for both today's demanding consumer and tomorrow's AI-native one.
+          </p>
+        </div>
+
+        <!-- 150-word -->
+        <div class="mb-10 p-6 border border-white/5">
+          <div class="flex items-baseline justify-between mb-4">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-white">150 Words</p>
+            <span class="font-sans text-xs text-gray-400/40">Event program / Website</span>
+          </div>
+          <div class="font-sans text-sm text-gray-400 leading-relaxed space-y-3">
+            <p>Scott Bales has spent over twenty years on the front lines of every major shift in how people interact with money, information, and each other. As Chief Mobile Officer at Moven, he helped build the world's first downloadable bank. As Vice President at Visa company Fundamo, he shaped mobile payments infrastructure across emerging markets. As Head of Technology at ANZ subsidiary WING Money, he built financial systems for populations the existing industry had never considered.</p>
+            <p>That career produced two best-selling books — <em>Mobile Ready</em> and <em>Innovation Wars</em> — and a thesis that has become his signature: the Generational Pincer. Isaac is the mobile-native consumer who expects inclusion, transparency, and immediacy. Esther, born November 30, 2022 — the same day as ChatGPT — is the AI-native who will delegate every brand interaction to an agent. Scott's keynotes prepare leadership teams for both.</p>
+            <p>He holds a Masters of Business, Masters of Information Technology, and post-graduate Business Law.</p>
+          </div>
+        </div>
+
+        <!-- 300-word -->
+        <div class="p-6 border border-white/5">
+          <div class="flex items-baseline justify-between mb-4">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-white">300 Words</p>
+            <span class="font-sans text-xs text-gray-400/40">Full bio / Press kit</span>
+          </div>
+          <div class="font-sans text-sm text-gray-400 leading-relaxed space-y-3">
+            <p>Scott Bales has spent over twenty years on the front lines of every major shift in how people interact with money, information, and each other. As Chief Mobile Officer at Moven, he helped build the world's first downloadable bank — a financial institution designed from a blank screen for a user who had never known anything else. As Vice President at Visa company Fundamo, he shaped mobile payments infrastructure across emerging markets where a phone is not a convenience but the entire financial system. As Head of Technology at ANZ subsidiary WING Money in Cambodia, he built financial infrastructure for a population that had never had a bank account, under constraints — low literacy, shared devices, intermittent connectivity — that forced him to start from the human and work backward to the technology.</p>
+            <p>That career produced two best-selling books. <em>Mobile Ready: Connecting With The Untethered Consumer</em> documented the behavioral shift of six billion people carrying connected devices. <em>Innovation Wars</em> gave corporate leaders the frameworks to stop defending old models and start building new ones. Both set the foundation for what has become his signature thesis: the Generational Pincer.</p>
+            <p>Isaac is the mobile-native, social-native consumer — nineteen, demanding, and already inside your customer data, your employee pipeline, and your competitor's founding team. Esther was born on November 30, 2022, the same day as ChatGPT. She is the AI-native, the agentic-native, who will never interact with a brand directly. Her agent will. If it finds your product excludes, Esther will never know your company existed.</p>
+            <p>Scott's keynotes, executive workshops, and advisory engagements prepare leadership teams for both. His work is informed by a deeply personal catalyst — raising his son Jenson, whose experience with technology exclusion became the moral foundation of everything Scott builds.</p>
+            <p>He holds a Masters of Business, Masters of Information Technology, and post-graduate Business Law. He advises organizations including Microsoft, Google, Visa, AIA, Standard Chartered, Deloitte, Amazon, and Vodafone.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 3 — KEYNOTE TOPICS
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">03 — Keynote Topics</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full border-collapse">
+            <thead>
+              <tr class="border-b border-white/10">
+                <th class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 text-left py-3 pr-4 w-8">#</th>
+                <th class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 text-left py-3 pr-4">Title</th>
+                <th class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 text-left py-3 pr-4 hidden md:table-cell">Duration</th>
+                <th class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 text-left py-3 pr-4 hidden lg:table-cell">Format</th>
+                <th class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 text-left py-3">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              {keynoteTopics.map((topic) => (
+                <tr class="border-b border-white/5 hover:bg-white/[0.02] transition-colors">
+                  <td class="font-sans text-sm text-gray-400/40 py-4 pr-4 align-top">{topic.num}</td>
+                  <td class="font-sans text-sm text-white py-4 pr-4 align-top font-medium">{topic.title}</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 pr-4 align-top hidden md:table-cell whitespace-nowrap">{topic.duration}</td>
+                  <td class="font-sans text-xs tracking-[0.1em] uppercase text-gray-400/60 py-4 pr-4 align-top hidden lg:table-cell whitespace-nowrap">{topic.format}</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">{topic.line}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <p class="font-sans text-xs text-gray-400/60 mt-6">
+          All topics customized to industry vertical. Scott tailors 30–40% of content to the specific audience. Requires a 30-minute briefing call minimum 3 weeks before event.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 4 — THE TECHNICAL RIDER
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">04 — Technical Rider</p>
+        <p class="font-sans text-xs text-gray-400/60 mb-10">The audience should hear every word and see every pixel. No exceptions.</p>
+
+        <!-- AV Requirements -->
+        <div class="mb-12">
+          <p class="font-sans text-xs tracking-[0.15em] uppercase text-white mb-6">Audio / Visual Requirements</p>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse">
+              <tbody>
+                {avRequirements.map((item) => (
+                  <tr class="border-b border-white/5">
+                    <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">{item.req}</td>
+                    <td class="font-sans text-sm text-gray-400 py-4 align-top">{item.spec}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Travel -->
+        <div class="mb-12">
+          <p class="font-sans text-xs tracking-[0.15em] uppercase text-white mb-6">Travel</p>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse">
+              <tbody>
+                {travelSpecs.map((item) => (
+                  <tr class="border-b border-white/5">
+                    <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">{item.field}</td>
+                    <td class="font-sans text-sm text-gray-400 py-4 align-top">{item.detail}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Branding Guidelines -->
+        <div>
+          <p class="font-sans text-xs tracking-[0.15em] uppercase text-white mb-6">Branding Guidelines</p>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse">
+              <tbody>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Photography</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">Approved media kit only. No stock. No AI-generated likenesses.</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Name Treatment</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">"Scott Bales" — no middle initial, no honorifics. Always roman weight.</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Title</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">"Author of Innovation Wars & Mobile Ready" <span class="text-gray-400/40">or</span> "Creator of the Generational Pincer Framework." No other titles.</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Color</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">Monochrome (black/white/gray). Single accent color for name or Isaac/Esther names only.</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Layout</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">Swiss Grid proportions. Photo max 40%. Remaining 60% typography and whitespace.</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Social</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">@ScottEBales (all platforms). #AreYouReady #TheGenerationalPincer</td>
+                </tr>
+                <tr class="border-b border-white/5">
+                  <td class="font-sans text-sm text-white py-4 pr-6 align-top whitespace-nowrap font-medium w-40">Approval</td>
+                  <td class="font-sans text-sm text-gray-400 py-4 align-top">All materials featuring Scott submitted for review minimum 10 business days before publication.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 5 — PRICING
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">05 — Engagement Models</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+          <!-- Keynote -->
+          <div class="border border-white/10 p-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-2">The Keynote</p>
+            <p class="font-serif text-3xl text-white mb-4">$20,000 <span class="font-sans text-xs text-gray-400 tracking-normal">USD</span></p>
+            <ul class="font-sans text-sm text-gray-400 space-y-2">
+              <li>45–60 minute keynote, fully customized</li>
+              <li>30-minute pre-event briefing call</li>
+              <li>Final slide deck 48 hours in advance</li>
+              <li class="text-gray-400/40">Travel and accommodation not included</li>
+            </ul>
+          </div>
+
+          <!-- Sage Workshop -->
+          <div class="border border-white/10 p-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-2">The Sage Workshop</p>
+            <p class="font-serif text-3xl text-white mb-1">$12,000 <span class="font-sans text-xs text-gray-400 tracking-normal">USD standalone</span></p>
+            <p class="font-serif text-xl text-gray-400 mb-4">$8,000 <span class="font-sans text-xs text-gray-400/60 tracking-normal">USD bundled with keynote</span></p>
+            <ul class="font-sans text-sm text-gray-400 space-y-2">
+              <li>Half-day (3.5 hours) executive workshop</li>
+              <li>Maximum 30 participants</li>
+              <li>3 proprietary deliverables included</li>
+            </ul>
+          </div>
+
+          <!-- Full Day -->
+          <div class="border border-white/10 p-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-2">The Full Day</p>
+            <p class="font-serif text-3xl text-white mb-4">$30,000 <span class="font-sans text-xs text-gray-400 tracking-normal">USD</span></p>
+            <ul class="font-sans text-sm text-gray-400 space-y-2">
+              <li>Morning keynote (60 min)</li>
+              <li>Afternoon Sage Workshop (3.5 hours)</li>
+              <li>1-hour executive dinner or fireside chat</li>
+            </ul>
+          </div>
+
+          <!-- Book Pre-Purchase -->
+          <div class="border border-white/10 p-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-2">Book Pre-Purchase</p>
+            <p class="font-sans text-sm text-gray-400 mb-4">Bulk orders of 50+ copies at wholesale rate. Contact for pricing.</p>
+            <ul class="font-sans text-sm text-gray-400 space-y-2">
+              <li>On-site signing available (+30 min)</li>
+              <li>100+: Custom foreword insert</li>
+              <li>200+: Complimentary video message</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="border border-white/5 p-4 mt-4">
+          <p class="font-sans text-xs text-gray-400/60">
+            <span class="text-white font-medium">Payment:</span> 50% deposit on signing. 50% balance 14 days before event. Wire transfer or ACH.
+            <span class="text-white font-medium ml-4">Cancellation:</span> Full refund 60+ days. 50% retained 30–59 days. Full fee under 30 days.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 6 — INTRO SCRIPT
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-b border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">06 — Stage Introduction</p>
+        <p class="font-sans text-xs text-gray-400/60 mb-6">For the person introducing Scott on stage. Reads in approximately 45 seconds.</p>
+
+        <div class="border-l-2 border-accent/30 pl-6 space-y-4">
+          <p class="font-sans text-base text-gray-400 leading-relaxed">
+            Our next speaker built the world's first downloadable bank. He served as Vice President at Visa. He has advised Microsoft, Google, and Standard Chartered on how to navigate the shifts that are rewriting their industries.
+          </p>
+          <p class="font-sans text-base text-gray-400 leading-relaxed">
+            He has written two best-selling books. He has delivered keynotes on six continents. And he has developed a framework that no one else on the speaking circuit delivers — what he calls the Generational Pincer.
+          </p>
+          <p class="font-sans text-base text-gray-400 leading-relaxed">
+            It works like this. <span class="text-accent">Isaac</span> is the consumer you are struggling to keep today — mobile-native, socially-native, and more demanding than any customer you have ever had. <span class="text-accent">Esther</span> was born on November 30, 2022 — the same day as ChatGPT. She is the AI-native who will never interact with your brand directly. Her agent will decide for her.
+          </p>
+          <p class="font-sans text-base text-white leading-relaxed">
+            Your organization is caught between both.
+          </p>
+          <p class="font-sans text-base text-white leading-relaxed">
+            Please welcome <span class="font-medium">Scott Bales</span>.
+          </p>
+        </div>
+
+        <p class="font-sans text-xs text-gray-400/40 mt-6 italic">
+          Do not ad-lib additional titles. The intro lands on "Please welcome Scott Bales" with no qualifier. The name is the credential.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BLOCK 7 — BOOKING PROCESS
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">07 — Booking Process</p>
+
+        <div class="space-y-0">
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">01</span>
+            <span class="font-sans text-sm text-gray-400">Initial inquiry via booking page or bureau</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">02</span>
+            <span class="font-sans text-sm text-gray-400">Availability confirmed within 48 hours</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">03</span>
+            <span class="font-sans text-sm text-gray-400">15-minute scoping call within 1 week</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">04</span>
+            <span class="font-sans text-sm text-gray-400">Formal proposal + contract within 48 hours of scoping call</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">05</span>
+            <span class="font-sans text-sm text-gray-400">Contract signed + 50% deposit received</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">06</span>
+            <span class="font-sans text-sm text-gray-400">30-minute briefing call, 3–4 weeks before event</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">07</span>
+            <span class="font-sans text-sm text-gray-400">Final slide deck delivered 48 hours before event</span>
+          </div>
+          <div class="flex gap-4 py-4 border-b border-white/5">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">08</span>
+            <span class="font-sans text-sm text-gray-400">Sound check + tech rehearsal day before or 2+ hours before</span>
+          </div>
+          <div class="flex gap-4 py-4">
+            <span class="font-sans text-xs text-gray-400/40 w-6 shrink-0">09</span>
+            <span class="font-sans text-sm text-white font-medium">Keynote delivered</span>
+          </div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="/book-scott-bales-keynote-speaker" class="inline-block font-sans text-xs tracking-[0.1em] uppercase px-8 py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors">
+            Start Booking Process
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

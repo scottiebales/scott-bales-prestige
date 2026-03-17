@@ -1,0 +1,401 @@
+{
+  "meta": {
+    "generated": "2026-03-16",
+    "sources": [
+      "scottebales.com (sitemap + blog index)",
+      "londonspeakerbureau.com",
+      "celebrityspeakers.com.au",
+      "odemanagement.com",
+      "speakersconnect.com",
+      "bigspeak.com",
+      "aaespeakers.com",
+      "a-speakers.com",
+      "speakers.com",
+      "insightbureau.com",
+      "amazon.com (Mobile Ready listing)"
+    ]
+  },
+
+  "identity": {
+    "name": "Scott Bales",
+    "titles": [
+      "Global Futurist",
+      "Innovation & Digital Strategist",
+      "Serial Entrepreneur",
+      "TEDx Speaker",
+      "Best-Selling Author",
+      "Technology Guru",
+      "Digital Warrior"
+    ],
+    "positioning_statement": "A global leader in the cutting-edge arena known as 'The Digital Shift', encompassing innovation, culture, design, and mobility in a world gone digital.",
+    "base": "Singapore (currently US-based per site title)",
+    "advisory_firm": "Innovation Labs Asia",
+    "mission": "Driving positive human impact through technology application"
+  },
+
+  "credentials": {
+    "education": [
+      "Masters of Business",
+      "Masters of Information Technology",
+      "Post-graduate Business Law"
+    ],
+    "career_history": [
+      {
+        "role": "Chief Mobile Officer",
+        "company": "Moven",
+        "note": "World's first downloadable/digital everyday bank"
+      },
+      {
+        "role": "Vice President",
+        "company": "Fundamo (Visa company)",
+        "note": null
+      },
+      {
+        "role": "Head of Technology",
+        "company": "WING Money (ANZ subsidiary)",
+        "note": null
+      },
+      {
+        "role": "Founding Member",
+        "company": "Next Bank",
+        "note": null
+      },
+      {
+        "role": "Founder / Principal",
+        "company": "Innovation Labs Asia",
+        "note": "Current advisory firm"
+      }
+    ],
+    "board_and_advisory": [
+      "Care Pakistan (Board Member)",
+      "Startup Bootcamp Fintech (Advisor)",
+      "Hub Singapore (Advisor)",
+      "Apps 4 Good (Advisor)",
+      "FastaCash (Advisory)",
+      "Our Better World (Advisory)"
+    ],
+    "years_experience": "20+"
+  },
+
+  "publications": [
+    {
+      "title": "Mobile Ready: Connecting With The Untethered Consumer",
+      "status": "Best-seller",
+      "note": "Set crowdfunding record via Publishizer",
+      "description": "Addresses how 6+ billion mobile devices globally have created a new ecosystem changing consumer mindset and behavior."
+    },
+    {
+      "title": "Innovation Wars: Unlocking the Secrets of Corporate Innovation",
+      "status": "Published",
+      "description": "New business designs, tools, and frameworks for leaders to steer organizations towards success through self-reflection, experimentation, and value proposition discovery."
+    }
+  ],
+
+  "speaking_topics": [
+    {
+      "title": "Recode Leadership (Recode Your Leadership)",
+      "theme": "Leadership / Digital Transformation",
+      "description": "Navigating challenges of the digital economy through a transformational leadership framework covering Reskill, Retool, Reinvent, and Recode approaches for digital-first workforces.",
+      "key_takeaways": [
+        "Four-step framework for executive transformation",
+        "Case studies on developing self-awareness and reinvention strategies",
+        "Guidance for modern leaders adapting to technology-saturated markets"
+      ]
+    },
+    {
+      "title": "Innovation Wars",
+      "theme": "Innovation / Strategy",
+      "description": "Competitive innovation edge for modern organizations. Greater than 65% of corporate executives see innovation as the key to market success.",
+      "key_takeaways": [
+        "Analysis of innovation success vs. failure in corporate settings",
+        "Strategic lessons from leading organizations",
+        "Frameworks, tools, and implementation strategies"
+      ]
+    },
+    {
+      "title": "Smart Cities & Digital Citizens (Future Cities)",
+      "theme": "Smart Cities / IoT / AI",
+      "description": "Exploring smart city evolution, IoT, artificial intelligence, and autonomous vehicles through the lens of digital citizens.",
+      "key_takeaways": [
+        "Evolution of smart cities through digital citizen perspectives",
+        "Understanding technology trends reshaping infrastructure and societies",
+        "Demystifying technological buzzwords"
+      ]
+    },
+    {
+      "title": "The Future Consumer (Are You Ready for Isaac?)",
+      "theme": "Consumer Behavior / Digital Natives",
+      "description": "Understanding digital natives (Millennials/Gen Z), their expectations for transparency and authenticity, and actionable engagement strategies.",
+      "key_takeaways": [
+        "Understanding transparency, authenticity, and utility preferences",
+        "Engagement strategies for Millennial and Gen Z consumers",
+        "Measurement frameworks for organizational impact",
+        "Disintermediation risks"
+      ]
+    },
+    {
+      "title": "The Future of Work",
+      "theme": "Future of Work / AI / Productivity",
+      "description": "Addressing hybrid/remote work models, digital natives in workforce, and advanced productivity technologies for post-pandemic success.",
+      "key_takeaways": [
+        "Human element in AI-augmented workplaces",
+        "Framework for identifying business-changing trends",
+        "Strategic positioning to avoid obsolescence"
+      ]
+    },
+    {
+      "title": "Empowering Potential",
+      "theme": "Accessibility / Diversity / Personal",
+      "description": "Technology's role in accessibility and diversity, blending personal experience raising a child with special needs with professional expertise.",
+      "key_takeaways": [
+        "Emerging tech (AI, VR/AR, voice recognition) for inclusion",
+        "Personal story of son Jenson as innovation catalyst",
+        "Building voice for the voiceless"
+      ]
+    },
+    {
+      "title": "Blockchain, Big Data and Bitcoin",
+      "theme": "Emerging Technology / FinTech",
+      "description": "Demystifies emerging technologies and demonstrates fit-for-purpose approaches. From buzzwords to boardrooms.",
+      "key_takeaways": []
+    }
+  ],
+
+  "workshops": [
+    "Building innovative culture",
+    "Measuring innovation",
+    "Building customer personas for product market fit",
+    "Tackling organizational barriers to innovation",
+    "Introduction to lean enterprise"
+  ],
+
+  "notable_clients": [
+    "Microsoft",
+    "Google",
+    "Deloitte",
+    "Amazon",
+    "VISA",
+    "AIA",
+    "Vodafone",
+    "Standard Chartered Bank",
+    "Cognizant",
+    "ANZ",
+    "Moven",
+    "Singapore Management University"
+  ],
+
+  "events_spoken_at": [
+    "TEDx",
+    "Social Media Week",
+    "Google Think",
+    "Fund Forum",
+    "Asian Banker",
+    "Next Money",
+    "Next Bank Asia (Singapore)",
+    "Mobile Commerce Summit (Singapore)",
+    "Vodafone APAC NZ Gigabit Society Summit",
+    "Middle East Banking Forum (Dubai)",
+    "Submarine Networks World (Terrapinn)",
+    "The Mobile Show 2014",
+    "Asian Banking Summit"
+  ],
+
+  "speaking_fee_range": {
+    "live": "$10,000 - $20,000",
+    "virtual": "$10,000 - $20,000",
+    "source": "bigspeak.com / speakers.com"
+  },
+
+  "bureau_affiliations": [
+    "London Speaker Bureau",
+    "Celebrity Speakers (Australia)",
+    "ODE Management",
+    "Speakers Connect (Asia)",
+    "BigSpeak",
+    "AAE Speakers Bureau",
+    "A-Speakers",
+    "Speakers.com",
+    "The Insight Bureau",
+    "Speakers Corner (UK)"
+  ],
+
+  "testimonials": [
+    {
+      "quote": "Scott's content and stage presence are first class.",
+      "source": "Microsoft",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "It's tough to make talks in the Financial space exciting, and Scott delivered. I would highly recommend him for speaking engagements in the Finance/Banking industry.",
+      "source": "Google",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "Scott was not only a very engaging and thought-provoking futurologist but he, and his team, were a pleasure to work with. I have been given so much positive feedback about his content as well as his style of delivery. We would readily recommend Scott for future events.",
+      "source": "Vodafone APAC NZ Gigabit Society Summit",
+      "person": "Hart Wilcox",
+      "title": "Event Organizer"
+    },
+    {
+      "quote": "His presentations and knowledge displayed at various panels were highly appreciated by the audience. I would not hesitate to hire Scott again, as he clearly makes a difference.",
+      "source": "Cognizant Technology Solutions",
+      "person": null,
+      "title": "AVP Practice Head, Banking & Financial Services"
+    },
+    {
+      "quote": "Engaging and informative, Scott's presentation was a great way to start off our 20th edition, and many of our attendees found his session to be both thought-provoking and useful.",
+      "source": "Terrapinn Pte Ltd (Submarine Networks World)",
+      "person": null,
+      "title": "Project Director"
+    },
+    {
+      "quote": "Scott is one of the up and coming leaders in mobile financial services. He's got an abundance of broad experience in the hottest mobile markets on the planet.",
+      "source": "The Asian Banking Summit",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "A true technology innovator and financial services guru.",
+      "source": "Next Bank",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "Scott is himself on stage, as a passionate individual and rare industry leader at the intersection of banking, technology and trend. His talk conveys so much of his passion, energy and insight. Simply contagious!",
+      "source": "Next Bank Asia, Singapore",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "Content is industry-forward and delivery energetic and engaging. He is not afraid to take sides, express and defend an opinion.",
+      "source": "Mobile Commerce Summit Singapore",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "Scott holds great insight into disruptive dynamics in mobile revolution. Frames emerging customer expectations and business disconnects.",
+      "source": "AIA",
+      "person": null,
+      "title": "Regional Director, Head of Edge (Group Innovation)"
+    },
+    {
+      "quote": "Scott delivered a scintillating presentation on innovation disrupting traditional financial services and creating exciting new business models, products and services.",
+      "source": "Middle East Banking Forum (Dubai)",
+      "person": null,
+      "title": "Chairman"
+    },
+    {
+      "quote": "Very engaging speaker who captures and holds attention. Thought-provoking insights with strong audience interaction skills.",
+      "source": "Standard Chartered Bank",
+      "person": null,
+      "title": "Group Brand and Marketing"
+    },
+    {
+      "quote": "Innovative thinker challenging conventional norms. Understanding of present/future technology and adaptation is profound and insightful. Consummate professional.",
+      "source": "Standard Chartered Bank",
+      "person": null,
+      "title": null
+    },
+    {
+      "quote": "Dynamic and vibrant. Engages audience with interesting analogies and tech concepts. Delivers huge insights in short time.",
+      "source": "Singapore Management University",
+      "person": null,
+      "title": "Manager, Centre for Marketing Excellence"
+    },
+    {
+      "quote": "Deep context, clever insights, and relevant thinking. Knowledgeable in domain; speaks with genuine passion.",
+      "source": "Visa Inc",
+      "person": null,
+      "title": "VP Technology Strategy & Innovation"
+    },
+    {
+      "quote": "Instinctually understands mobile space better than anyone else in Asia. Real value in unparalleled ability to connect and network.",
+      "source": null,
+      "person": "Brett King",
+      "title": "Best-Selling Author, Bank 2.0 & Bank 3.0"
+    },
+    {
+      "quote": "Great connector and networker who positively pushes people forward. Genuine effort making customer experiences more enjoyable for developing markets.",
+      "source": "Next Bank",
+      "person": null,
+      "title": "Founder"
+    },
+    {
+      "quote": "Leading the industry and across every current important movement in mobile banking. Someone to listen to.",
+      "source": "FST Singapore",
+      "person": null,
+      "title": null
+    }
+  ],
+
+  "voice_profile": {
+    "tone_descriptors": [
+      "Passionate",
+      "Energetic",
+      "Thought-provoking",
+      "Engaging",
+      "Opinion-driven (not afraid to take sides)",
+      "Conversational with authority",
+      "Interactive presentation style"
+    ],
+    "recurring_phrases": [
+      "The Digital Shift",
+      "Innovation Wars",
+      "Digital Warrior",
+      "Positive human impact through technology",
+      "The untethered consumer"
+    ],
+    "content_themes_from_blog": [
+      "AI-driven decision making for business leaders",
+      "Digital infrastructure boom in APAC",
+      "Hands-on AI experience for executives",
+      "Smart cities and digital citizens",
+      "Compute power challenges for AI",
+      "Boosting productivity with AI",
+      "GenAI revolution for C-suite",
+      "AI audit and self-reflection",
+      "Data estate modernization",
+      "AI writing code - what comes next",
+      "The Human Algorithm (personal vulnerability series)",
+      "AI readiness for organizations",
+      "From digital natives to AI natives",
+      "AI ethics",
+      "Voice for the voiceless (son Jenson, accessibility)",
+      "AI skills in Southeast Asia"
+    ],
+    "personal_story_hooks": [
+      "Raising son Jenson with special needs - catalyst for 'Empowering Potential' talk and accessibility tech passion",
+      "The Human Algorithm series - 'The moment I realised I was a fraud' (vulnerability/authenticity angle)",
+      "Journey from banking tech executive to global innovation advisor"
+    ]
+  },
+
+  "current_site_observations": {
+    "platform": "Wix",
+    "pages": [
+      "/",
+      "/about",
+      "/publications",
+      "/blog",
+      "/partner",
+      "/bureau",
+      "/blank"
+    ],
+    "missing_pages": [
+      "No dedicated /keynotes or /speaking page",
+      "No dedicated /testimonials page",
+      "No /contact standalone page"
+    ],
+    "site_title": "Digital Transformation Consulting | Scott Bales 2025",
+    "issues_noted": [
+      "Site title says 2025 (outdated)",
+      "Content loads entirely via JavaScript (poor SEO, inaccessible to crawlers)",
+      "No dedicated testimonials page despite 18+ strong testimonials",
+      "No dedicated keynotes/speaking page despite being primary revenue driver",
+      "Bureau pages exist but are hidden/separate from main navigation",
+      "Blog posts show strong AI pivot but homepage/bureau profiles still lead with mobile/fintech positioning"
+    ]
+  }
+}

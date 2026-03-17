@@ -1,0 +1,464 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PrestigeImage from '../components/PrestigeImage.astro';
+
+const timeline = [
+  { year: '2006', role: 'Head of Technology', org: 'WING Money (ANZ)', location: 'Cambodia' },
+  { year: '2010', role: 'Vice President', org: 'Fundamo (Visa)', location: 'Emerging Markets' },
+  { year: '2012', role: 'Published', org: 'Mobile Ready', location: 'Best-Seller' },
+  { year: '2013', role: 'Chief Mobile Officer', org: 'Moven', location: 'New York' },
+  { year: '2016', role: 'Published', org: 'Innovation Wars', location: 'Best-Seller' },
+  { year: '2022', role: 'Created', org: 'The Generational Pincer', location: 'Isaac & Esther' },
+];
+
+const advisors = [
+  'Microsoft', 'Google', 'Amazon', 'Visa', 'AIA',
+  'Standard Chartered', 'Deloitte', 'Vodafone',
+];
+---
+
+<BaseLayout
+  title="About Scott Bales — Earned Authority | Scott Bales"
+  description="Twenty years on the front lines. Cambodia, emerging markets, the world's first digital bank. The career that produced Isaac, Esther, and the Generational Pincer."
+>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO — Earned Authority
+       ════════════════════════════════════════════════════════ -->
+  <section class="min-h-screen flex items-end px-8 pb-24 md:pb-32 relative">
+    <div class="swiss-grid w-full">
+      <!-- Left col: Typography -->
+      <div class="col-span-12 md:col-span-7 md:col-start-1 fade-in" style="grid-column: 1 / 8;">
+        <p class="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-6">About</p>
+        <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.0] mb-8">
+          Earned<br />Authority.
+        </h1>
+        <p class="font-sans text-lg text-gray-400 leading-relaxed max-w-lg">
+          Not borrowed. Not claimed. Built — across twenty years, four continents,
+          and every major shift in how people interact with money, information,
+          and each other.
+        </p>
+      </div>
+      <!-- Right col: Headshot -->
+      <div class="col-span-12 md:col-span-4 md:col-start-9 mt-12 md:mt-0 fade-in" style="grid-column: 9 / 13;">
+        <PrestigeImage
+          src="/images/scott-bales-stage.jpg"
+          alt="Scott Bales — editorial portrait"
+          aspect="4/5"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       TIMELINE — Swiss Grid vertical line, no icons
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-12">The Record</p>
+
+        <div class="about-timeline relative">
+          <!-- Vertical rule -->
+          <div class="about-timeline__rule" aria-hidden="true"></div>
+
+          {timeline.map((entry) => (
+            <div class="about-timeline__entry">
+              <div class="about-timeline__year">
+                <span class="font-sans text-xs tracking-[0.15em] text-accent">{entry.year}</span>
+              </div>
+              <div class="about-timeline__dot" aria-hidden="true"></div>
+              <div class="about-timeline__content">
+                <p class="font-sans text-sm text-white font-medium">{entry.role}</p>
+                <p class="font-sans text-sm text-gray-400">{entry.org}</p>
+                <p class="font-sans text-xs text-gray-400/40 mt-1">{entry.location}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <p class="font-sans text-xs text-gray-400/40 mt-12">
+          Masters of Business. Masters of Information Technology. Post-Graduate Business Law.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE FRONT LINES — Three columns
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">The Front Lines</p>
+        <h2 class="font-serif text-3xl md:text-5xl leading-[1.1] mb-16">
+          Three positions. One question each time.
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5">
+
+          <!-- Cambodia — WING Money -->
+          <div class="bg-black p-8 md:p-10 flex flex-col">
+            <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/40 mb-2">Cambodia</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-accent mb-6">WING Money (ANZ)</p>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-6">
+              Who is this not working for?
+            </h3>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              Financial infrastructure for a population that had never had a bank
+              account. The design constraints were absolute: low literacy, shared
+              devices, intermittent connectivity. You could not default to the
+              assumptions that worked in Sydney or Singapore.
+            </p>
+            <p class="font-sans text-sm text-white leading-relaxed mt-auto">
+              Start from the human. Work backward to the technology.
+            </p>
+          </div>
+
+          <!-- Emerging Markets — Visa / Fundamo -->
+          <div class="bg-black p-8 md:p-10 flex flex-col">
+            <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/40 mb-2">Emerging Markets</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-accent mb-6">Fundamo (Visa)</p>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-6">
+              What do we build for the people the system never considered?
+            </h3>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              Global payments infrastructure where a mobile phone is not a
+              convenience but the entire financial system. The question was never
+              "how do we digitize what exists?" — it was what to build for people
+              the existing system never considered.
+            </p>
+            <p class="font-sans text-sm text-white leading-relaxed mt-auto">
+              The phone is not the channel. It is the institution.
+            </p>
+          </div>
+
+          <!-- Digital Banking — Moven -->
+          <div class="bg-black p-8 md:p-10 flex flex-col">
+            <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/40 mb-2">New York</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-accent mb-6">Moven</p>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-6">
+              What would it look like if no one had invented it yet?
+            </h3>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              The world's first downloadable bank. No branches. No paperwork. No
+              legacy. A financial institution designed from a blank screen for a
+              user who had never known anything else. We did not digitize banking.
+              We started over.
+            </p>
+            <p class="font-sans text-sm text-white leading-relaxed mt-auto">
+              Do not improve the old model. Replace the premise.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-accent italic">
+          Three jobs. One question each time:<br />
+          Who is this not working for — and what would it take to include them?
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       STAGE SHOT — Full-width authority
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5">
+    <div class="swiss-grid py-0">
+      <div class="content-col fade-in">
+        <PrestigeImage
+          src="/images/scott-bales-stage-wide.jpg"
+          alt="Scott Bales delivering a keynote — audience visible"
+          aspect="16/9"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE BOOKS — Two columns
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-12">The Books</p>
+
+        <PrestigeImage
+          src="/images/book-covers.jpg"
+          alt="Mobile Ready and Innovation Wars — both books by Scott Bales"
+          aspect="16/9"
+          class="mb-12"
+        />
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div>
+            <p class="font-serif text-2xl md:text-3xl text-white leading-snug mb-4">
+              Mobile Ready
+            </p>
+            <p class="font-sans text-xs tracking-[0.1em] uppercase text-gray-400/40 mb-4">
+              Connecting With The Untethered Consumer
+            </p>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed">
+              The behavioral shift of six billion people carrying connected devices.
+              The untethered consumer who would not wait for institutions to catch up.
+              The book that documented the wave before Isaac gave it a name.
+            </p>
+          </div>
+          <div>
+            <p class="font-serif text-2xl md:text-3xl text-white leading-snug mb-4">
+              Innovation Wars
+            </p>
+            <p class="font-sans text-xs tracking-[0.1em] uppercase text-gray-400/40 mb-4">
+              Unlocking the Secrets of Corporate Innovation
+            </p>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed">
+              The frameworks to stop defending old models and start building new ones.
+              Why 65% of corporate innovation programs fail — and the operating system
+              that fixes it. The thesis across both books was the same: design for the
+              person you have not met yet.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE ADVISORY — Logo wall
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">The Advisory</p>
+        <p class="font-sans text-sm text-gray-400 leading-relaxed mb-12 max-w-lg">
+          Strategic advisor to leadership teams at organizations shaping
+          how the world transacts, communicates, and competes.
+        </p>
+
+        <PrestigeImage
+          src="/images/scott-bales-advisory.jpg"
+          alt="Scott Bales in an advisory session with executive leadership"
+          aspect="16/9"
+          class="mb-12"
+        />
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/[0.03]">
+          {advisors.map((name) => (
+            <div class="about-logo-cell bg-black flex items-center justify-center py-10 px-6">
+              <span class="font-sans text-sm tracking-[0.2em] uppercase text-gray-400/25 group-hover:text-gray-400/50 transition-colors select-none">
+                {name}
+              </span>
+            </div>
+          ))}
+        </div>
+
+        <p class="font-sans text-xs text-gray-400/30 mt-6 text-center">
+          Logos to be replaced with approved brand marks from the media kit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE THESIS — How 20 years led to Isaac and Esther
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The Thesis</p>
+        <h2 class="font-serif text-3xl md:text-5xl leading-[1.1] mb-10">
+          Twenty years of data.<br />
+          Two names.
+        </h2>
+
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Cambodia taught me that technology excludes by default. If you do not
+          design against that default — deliberately, structurally, from the
+          first line of code — your product will serve the people who were
+          already being served.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Visa taught me that the people the system never considered are not
+          a niche. They are the majority. Six billion people carrying connected
+          devices, and the industry was still designing for the hundred million
+          who walked into branches.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Moven taught me that the answer is not incremental improvement. It is
+          architectural replacement. You do not digitize what exists. You ask
+          what would exist if no one had built the wrong thing first.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-12">
+          And then Jenson taught me the most important thing of all: that the
+          person I had not designed for was in my own house.
+        </p>
+
+        <div class="border-l-2 border-accent/30 pl-8 space-y-6">
+          <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+            That is where <span class="text-accent">Isaac</span> came from — the generation that
+            inherited Jenson's refusal to accept technology that was not built for them,
+            and made it a market force.
+          </p>
+          <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+            That is where <span class="text-accent">Esther</span> came from — the generation born
+            alongside the machine, who will not even know exclusion is possible because
+            her agent will have already routed her past it.
+          </p>
+          <p class="font-sans text-lg md:text-xl text-white leading-relaxed">
+            That is the Generational Pincer. And twenty years of front-line
+            evidence is what makes it hold.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full viewport statement -->
+  <section class="min-h-[60vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <p class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-white">
+          <strong>The name is the credential.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CTA
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          No PDF will tell you what Scott will do for your audience.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-12">
+          The only way to know is to talk.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="/book-scott-bales-keynote-speaker"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+          >
+            Book Scott Bales
+          </a>
+          <a
+            href="/origin-story-jenson-human-algorithm"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 text-gray-400 hover:text-white transition-colors"
+          >
+            Read the Origin Story &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ── About Page — Timeline ── */
+
+  .about-timeline {
+    padding-left: 80px;
+  }
+
+  .about-timeline__rule {
+    position: absolute;
+    left: 38px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 240, 255, 0.3) 0%,
+      rgba(255, 255, 255, 0.05) 100%
+    );
+  }
+
+  .about-timeline__entry {
+    position: relative;
+    padding-bottom: 2.5rem;
+  }
+
+  .about-timeline__entry:last-child {
+    padding-bottom: 0;
+  }
+
+  .about-timeline__year {
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 60px;
+    text-align: right;
+  }
+
+  .about-timeline__dot {
+    position: absolute;
+    left: -46px;
+    top: 4px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #00F0FF;
+    opacity: 0.5;
+    box-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+  }
+
+  .about-timeline__entry:first-child .about-timeline__dot {
+    opacity: 0.3;
+  }
+
+  .about-timeline__entry:last-child .about-timeline__dot {
+    opacity: 1;
+    width: 9px;
+    height: 9px;
+    left: -47px;
+    top: 3px;
+  }
+
+  /* Logo wall hover */
+  .about-logo-cell {
+    transition: background-color 0.3s ease;
+  }
+
+  .about-logo-cell:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+
+  .about-logo-cell:hover span {
+    color: rgba(156, 163, 175, 0.5);
+  }
+
+  /* Responsive timeline */
+  @media (max-width: 640px) {
+    .about-timeline {
+      padding-left: 60px;
+    }
+
+    .about-timeline__rule {
+      left: 28px;
+    }
+
+    .about-timeline__year {
+      left: -60px;
+      width: 44px;
+    }
+
+    .about-timeline__dot {
+      left: -36px;
+    }
+
+    .about-timeline__entry:last-child .about-timeline__dot {
+      left: -37px;
+    }
+  }
+</style>

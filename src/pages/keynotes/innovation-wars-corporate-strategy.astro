@@ -1,0 +1,462 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrestigeImage from '../../components/PrestigeImage.astro';
+
+const outcomes = [
+  {
+    num: '01',
+    title: 'The Diagnostic',
+    line: 'Why your innovation program is failing — and how to know which failure mode you are in.',
+  },
+  {
+    num: '02',
+    title: 'The Framework',
+    line: 'The three-phase audit that separates organizations that innovate from organizations that perform innovation.',
+  },
+  {
+    num: '03',
+    title: 'The Kill List',
+    line: 'Which initiatives to stop funding immediately — and what to redirect that budget toward.',
+  },
+  {
+    num: '04',
+    title: 'The Isaac Test',
+    line: 'How to pressure-test every innovation investment against the consumer who will judge it: Isaac.',
+  },
+  {
+    num: '05',
+    title: 'The 90-Day Mandate',
+    line: 'A deployable action plan your leadership team can execute before the next board cycle.',
+  },
+];
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Innovation Wars: Why 65% of Corporate Innovation Programs Fail",
+  "description": "Scott Bales' Innovation Wars keynote delivers the framework that separates organizations that innovate from organizations that perform innovation. Based on twenty years of front-line experience at Moven, Visa, and advisory roles with Microsoft, Google, and Fortune 500 leadership teams.",
+  "author": {
+    "@type": "Person",
+    "name": "Scott Bales",
+    "url": "https://scottbales.com"
+  },
+  "about": [
+    { "@type": "Thing", "name": "Corporate Innovation Strategy" },
+    { "@type": "Thing", "name": "Innovation Failure" },
+    { "@type": "Book", "name": "Innovation Wars: Unlocking the Secrets of Corporate Innovation", "author": { "@type": "Person", "name": "Scott Bales" } },
+    { "@type": "DefinedTerm", "name": "The Generational Pincer Framework" }
+  ],
+  "keywords": "corporate innovation, innovation failure, Innovation Wars, Scott Bales, innovation strategy, keynote speaker, digital transformation"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do most corporate innovation programs fail?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "65% of corporate innovation programs fail because they optimize the wrong layer. According to Scott Bales' Innovation Wars framework, most organizations invest in innovation theater — labs, accelerators, hackathons — while leaving the structural constraints unchanged. They are tuning a broken engine instead of replacing the drivetrain. The three failure modes are: misdiagnosis (solving the wrong problem), misdesign (building for the average user instead of the demanding one), and misdeployment (piloting without a path to production). Scott Bales' three-phase Innovation Audit — Diagnostic, Design, Deployment — addresses all three."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Scott Bales' Innovation Wars keynote about?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Innovation Wars is Scott Bales' keynote on corporate innovation strategy, based on his best-selling book of the same name and twenty years of front-line experience building the world's first digital bank at Moven, shaping mobile payments infrastructure at Visa, and advising Microsoft, Google, and Fortune 500 leadership teams. The keynote delivers a three-phase Innovation Audit framework — Diagnostic (identify your failure mode), Design (build for Isaac, the mobile-native consumer who will judge your output), and Deployment (ship to production, not to a pilot graveyard). It is a 45-60 minute keynote customized to the audience's industry."
+      }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Innovation Wars — Why 65% of Corporate Innovation Programs Fail | Scott Bales"
+  description="Scott Bales' Innovation Wars keynote: the framework that separates organizations that innovate from organizations that perform innovation. Based on the best-selling book."
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO — The Statistic. Hard. Immediate.
+       ════════════════════════════════════════════════════════ -->
+  <section class="min-h-screen flex items-center justify-center px-8 relative">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center">
+        <p class="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-8 fade-in">Innovation Wars</p>
+        <h1 class="font-serif text-5xl md:text-7xl lg:text-8xl leading-[1.0] mb-8 fade-in">
+          <span class="text-accent">65%</span> of corporate innovation programs fail.
+        </h1>
+        <p class="font-sans text-lg md:text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-12 fade-in">
+          Yours is probably one of them.<br />
+          This keynote tells you why — and what to do about it.
+        </p>
+        <a
+          href="/book-scott-bales-keynote-speaker"
+          class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors fade-in"
+        >
+          Book This Keynote
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE HOOK — The Porsche 997 Metaphor
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The Problem</p>
+        <h2 class="font-serif text-3xl md:text-5xl leading-[1.1] mb-10">
+          You are tuning a broken engine.
+        </h2>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          A Porsche 997 does not win because it has more features. It wins because
+          every system — engine, chassis, aerodynamics, driver interface — is
+          designed to serve a single, uncompromising objective: speed with precision.
+          Nothing is decorative. Nothing is redundant. Every component either
+          contributes to performance or it is removed.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-8">
+          Most corporate innovation programs are the opposite.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          They bolt an innovation lab onto a structure that was never designed to
+          absorb what the lab produces. They hire a Head of Innovation and give them
+          a budget but not authority. They run hackathons that generate excitement
+          and prototypes that generate nothing. They invest in the appearance of
+          speed while the drivetrain — the operating model, the incentive structure,
+          the decision-making architecture — remains unchanged.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed">
+          They are not innovating. They are performing innovation.<br />
+          And the performance is expensive.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote — The engine -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-accent italic">
+          You do not win a race by adding horsepower to a broken drivetrain.<br />
+          You win by rebuilding the machine.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE THREE FAILURE MODES
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The Three Failure Modes</p>
+        <p class="font-sans text-base text-gray-400 leading-relaxed mb-12 max-w-2xl">
+          Twenty years. Four continents. Hundreds of organizations.
+          The failures always fall into three categories.
+        </p>
+
+        <div class="space-y-0">
+          <!-- Misdiagnosis -->
+          <div class="border-b border-white/5 py-8">
+            <div class="flex items-baseline gap-6 mb-4">
+              <span class="font-sans text-xs text-accent/40 shrink-0">01</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-white">Misdiagnosis</h3>
+            </div>
+            <p class="font-sans text-base text-gray-400 leading-relaxed ml-10">
+              You are solving the wrong problem. Your innovation team is building
+              solutions for a customer who does not exist — a composite persona
+              assembled from surveys and averages rather than the actual human
+              standing in front of your product. Isaac does not match your persona.
+              He never did.
+            </p>
+          </div>
+
+          <!-- Misdesign -->
+          <div class="border-b border-white/5 py-8">
+            <div class="flex items-baseline gap-6 mb-4">
+              <span class="font-sans text-xs text-accent/40 shrink-0">02</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-white">Misdesign</h3>
+            </div>
+            <p class="font-sans text-base text-gray-400 leading-relaxed ml-10">
+              You are building for the average instead of the edge. A Porsche is
+              not designed for the average driver — it is designed for the driver
+              who will push every system to its limit. The products that survive
+              Isaac and <span class="text-accent">Esther</span> are the ones designed for
+              the most demanding user, not the most common one.
+            </p>
+          </div>
+
+          <!-- Misdeployment -->
+          <div class="py-8">
+            <div class="flex items-baseline gap-6 mb-4">
+              <span class="font-sans text-xs text-accent/40 shrink-0">03</span>
+              <h3 class="font-serif text-2xl md:text-3xl text-white">Misdeployment</h3>
+            </div>
+            <p class="font-sans text-base text-gray-400 leading-relaxed ml-10">
+              You are piloting without a path to production. Your innovation lab
+              has produced forty-seven prototypes and shipped zero products. The
+              pilot graveyard is full of good ideas that died because no one built
+              the bridge between experiment and execution. The drivetrain was never
+              connected to the wheels.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       STAGE SHOT — Authority visual
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5">
+    <div class="swiss-grid py-0">
+      <div class="content-col fade-in">
+        <PrestigeImage
+          src="/images/scott-bales-innovation-wars-stage.jpg"
+          alt="Scott Bales delivering the Innovation Wars keynote"
+          aspect="16/9"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE INNOVATION AUDIT — Three Phases
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">The Framework</p>
+        <h2 class="font-serif text-3xl md:text-5xl leading-[1.1] mb-6">
+          The Innovation Audit
+        </h2>
+        <p class="font-sans text-base text-gray-400 leading-relaxed mb-16 max-w-2xl">
+          From Scott's best-selling book <em class="text-white">Innovation Wars</em> — the
+          three-phase framework that separates organizations that innovate from
+          organizations that perform innovation.
+        </p>
+
+        <!-- Phase cards — high-contrast Swiss Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5">
+
+          <!-- Phase 1: Diagnostic -->
+          <div class="bg-black p-8 md:p-10 flex flex-col">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="inline-block w-10 h-px bg-accent"></span>
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent">Phase 01</p>
+            </div>
+            <h3 class="font-serif text-2xl md:text-3xl text-white mb-6">Diagnostic</h3>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              Identify your failure mode. Is it misdiagnosis, misdesign, or
+              misdeployment? Most organizations are running all three simultaneously
+              and do not know it.
+            </p>
+            <div class="mt-auto pt-6 border-t border-white/5">
+              <p class="font-sans text-xs text-gray-400/60">Output</p>
+              <p class="font-sans text-sm text-white mt-1">
+                Innovation Failure Mode Assessment — which of the three is killing your ROI.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 2: Design -->
+          <div class="bg-black p-8 md:p-10 flex flex-col">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="inline-block w-10 h-px bg-accent"></span>
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent">Phase 02</p>
+            </div>
+            <h3 class="font-serif text-2xl md:text-3xl text-white mb-6">Design</h3>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              Rebuild for the edge, not the average. Redesign your innovation
+              pipeline to produce output that Isaac would use and
+              <span class="text-accent">Esther</span>'s agent would select.
+            </p>
+            <div class="mt-auto pt-6 border-t border-white/5">
+              <p class="font-sans text-xs text-gray-400/60">Output</p>
+              <p class="font-sans text-sm text-white mt-1">
+                Innovation Architecture Blueprint — the structural redesign your lab needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Phase 3: Deployment -->
+          <div class="bg-black p-8 md:p-10 flex flex-col">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="inline-block w-10 h-px bg-accent"></span>
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent">Phase 03</p>
+            </div>
+            <h3 class="font-serif text-2xl md:text-3xl text-white mb-6">Deployment</h3>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              Ship to production, not to a pilot graveyard. Connect the
+              drivetrain to the wheels. Build the bridge between experiment
+              and execution that your organization has never had.
+            </p>
+            <div class="mt-auto pt-6 border-t border-white/5">
+              <p class="font-sans text-xs text-gray-400/60">Output</p>
+              <p class="font-sans text-sm text-white mt-1">
+                90-Day Deployment Mandate — the action plan that survives contact with your org chart.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SOCIAL PROOF — Microsoft + Visa
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-12">The Evidence</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <blockquote class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-4">Microsoft</p>
+            <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+              "Content and stage presence are first class."
+            </p>
+          </blockquote>
+          <blockquote class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-4">Visa</p>
+            <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+              "Deep context, clever insights, and relevant thinking. Speaks with genuine passion."
+            </p>
+          </blockquote>
+        </div>
+
+        <div class="mt-12">
+          <blockquote class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 mb-4">Standard Chartered</p>
+            <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+              "Innovative thinker challenging conventional norms. Understanding of technology is profound."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-accent italic">
+          Innovation is not a department.<br />
+          It is an operating system.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       LEARNING OUTCOMES — High-contrast Swiss Grid cards
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">What Your Team Leaves With</p>
+        <h2 class="font-serif text-3xl md:text-5xl leading-[1.1] mb-12">
+          Five outcomes. Zero filler.
+        </h2>
+
+        <div class="space-y-px">
+          {outcomes.map((item) => (
+            <div class="iw-outcome flex items-start gap-6 bg-white/[0.02] hover:bg-white/[0.04] transition-colors p-6 md:p-8 border-l-2 border-accent/0 hover:border-accent/60">
+              <span class="font-sans text-xs text-accent/30 mt-1 shrink-0 w-6">{item.num}</span>
+              <div>
+                <p class="font-sans text-base text-white font-medium mb-1">{item.title}</p>
+                <p class="font-sans text-sm text-gray-400 leading-relaxed">{item.line}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SPECS — Format details
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">Keynote Specs</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5">
+          <div class="bg-black p-6">
+            <p class="font-sans text-xs text-gray-400/60 mb-1">Duration</p>
+            <p class="font-sans text-sm text-white">45–60 minutes</p>
+          </div>
+          <div class="bg-black p-6">
+            <p class="font-sans text-xs text-gray-400/60 mb-1">Format</p>
+            <p class="font-sans text-sm text-white">Keynote</p>
+          </div>
+          <div class="bg-black p-6">
+            <p class="font-sans text-xs text-gray-400/60 mb-1">Audience</p>
+            <p class="font-sans text-sm text-white">C-suite, innovation leaders, strategy teams, board offsites</p>
+          </div>
+          <div class="bg-black p-6">
+            <p class="font-sans text-xs text-gray-400/60 mb-1">Customization</p>
+            <p class="font-sans text-sm text-white">30–40% tailored to your industry, audience, and organization</p>
+          </div>
+          <div class="bg-black p-6">
+            <p class="font-sans text-xs text-gray-400/60 mb-1">Based On</p>
+            <p class="font-sans text-sm text-white"><em>Innovation Wars: Unlocking the Secrets of Corporate Innovation</em></p>
+          </div>
+          <div class="bg-black p-6">
+            <p class="font-sans text-xs text-gray-400/60 mb-1">Pairs With</p>
+            <p class="font-sans text-sm text-white">The Sage Workshop — half-day executive deep dive</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CTA — Aggressive close
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          Your innovation lab has a budget.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          Your competitors have a product.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-12">
+          Isaac does not care which one you have. He cares which one works.
+        </p>
+        <p class="font-serif text-3xl md:text-5xl text-accent mb-12">Stop performing.<br />Start shipping.</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="/book-scott-bales-keynote-speaker"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+          >
+            Book Innovation Wars
+          </a>
+          <a
+            href="/keynotes"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 text-gray-400 hover:text-white transition-colors"
+          >
+            All Keynotes &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

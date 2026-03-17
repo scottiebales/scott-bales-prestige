@@ -1,0 +1,195 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PrestigeImage from '../../components/PrestigeImage.astro';
+
+const featured = {
+  num: '03',
+  title: 'The Generational Pincer',
+  duration: '60–90 min',
+  format: 'Keynote / Executive Briefing',
+  provocation: 'Your customers are caught between a mobile-native who already expects more than you deliver — and an AI-native who will never give you the chance to try. This is Scott\'s signature.',
+  href: '/book-scott-bales-keynote-speaker',
+  tag: 'Signature Keynote',
+};
+
+const keynotes = [
+  {
+    num: '01',
+    title: 'Are You Ready for Isaac?',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: 'He is nineteen. He has never accepted a product that asked him to adapt. He is already inside your customer data — and your competitor\'s founding team.',
+    href: '/isaac-the-consumer-who-will-replace-your-customer',
+  },
+  {
+    num: '02',
+    title: 'Are You Ready for Esther?',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: 'Born the same day as ChatGPT. She will never interact with your brand directly. Her agent will decide — in milliseconds — whether you exist.',
+    href: '/esther-and-the-agentic-future',
+  },
+  {
+    num: '04',
+    title: 'Recode Leadership',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: 'The leaders Isaac trusts and Esther\'s agent evaluates look nothing like the ones sitting in your boardroom.',
+    href: '/book-scott-bales-keynote-speaker',
+  },
+  {
+    num: '05',
+    title: 'Innovation Wars',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: '65% of corporate innovation programs fail. Yours is probably one of them. This keynote tells you why — and what to do about it.',
+    href: '/keynotes/innovation-wars-corporate-strategy',
+  },
+  {
+    num: '06',
+    title: 'The Future of Work',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: 'Isaac is your next employee. Esther is your next employee\'s AI co-pilot. Neither will tolerate the workplace you built for someone else.',
+    href: '/book-scott-bales-keynote-speaker',
+  },
+  {
+    num: '07',
+    title: 'Smart Cities & Digital Citizens',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: 'Isaac expects smart cities. Esther expects cities that anticipate. The infrastructure you are building is already behind both.',
+    href: '/book-scott-bales-keynote-speaker',
+  },
+  {
+    num: '08',
+    title: 'Empowering Potential',
+    duration: '45–60 min',
+    format: 'Keynote',
+    provocation: 'Jenson is why Isaac matters. Jenson is why Esther\'s AI will refuse to exclude. Technology\'s job is inclusion — this is where Scott proves it.',
+    href: '/book-scott-bales-keynote-speaker',
+  },
+];
+---
+
+<BaseLayout
+  title="Keynotes — Strategic Interventions for a Dual-Native World | Scott Bales"
+  description="Eight keynotes from Scott Bales. From the Generational Pincer to Innovation Wars — strategic interventions for leadership teams preparing for Isaac and Esther."
+>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-6">Keynotes</p>
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] mb-8">
+          Strategic interventions for a dual-native world.
+        </h1>
+        <p class="font-sans text-lg text-gray-400 leading-relaxed max-w-2xl">
+          Eight keynotes. Each one built from twenty years on the front lines — not
+          from a trends report. Every talk is customized 30–40% to your industry,
+          audience, and organization.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       FEATURED — The Generational Pincer (full-width)
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5">
+    <div class="swiss-grid py-0">
+      <div class="content-col fade-in">
+        <a href={featured.href} class="keynote-featured group block border border-accent/20 hover:border-accent/50 transition-colors overflow-hidden">
+          <PrestigeImage
+            src="/images/scott-bales-advisory.jpg"
+            alt="Scott Bales delivering the Generational Pincer — signature keynote"
+            aspect="16/9"
+          />
+          <div class="p-8 md:p-12">
+            <div class="flex items-center gap-4 mb-6">
+              <span class="font-sans text-xs tracking-[0.15em] uppercase px-3 py-1 border border-accent/40 text-accent">{featured.tag}</span>
+              <span class="font-sans text-xs text-accent/40">{featured.duration}</span>
+              <span class="font-sans text-xs text-accent/40 hidden sm:inline">{featured.format}</span>
+            </div>
+            <h2 class="font-serif text-3xl md:text-5xl text-accent leading-[1.1] mb-6 group-hover:text-white transition-colors">
+              {featured.title}
+            </h2>
+            <p class="font-sans text-base md:text-lg text-gray-400 leading-relaxed max-w-3xl mb-8">
+              {featured.provocation}
+            </p>
+            <span class="font-sans text-xs tracking-[0.15em] uppercase text-accent group-hover:text-white transition-colors">
+              Book this keynote &rarr;
+            </span>
+          </div>
+          <!-- Accent bar -->
+          <div class="h-px bg-gradient-to-r from-accent/60 via-accent/20 to-transparent"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       KEYNOTE GRID — 7 cards, Swiss Grid gallery
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-white/5">
+          {keynotes.map((keynote) => (
+            <a href={keynote.href} class="keynote-card group bg-black p-8 flex flex-col hover:bg-white/[0.02] transition-colors">
+              <div class="flex items-baseline justify-between mb-6">
+                <span class="font-sans text-xs text-gray-400/30">{keynote.num}</span>
+                <span class="font-sans text-xs text-gray-400/40">{keynote.duration}</span>
+              </div>
+              <h3 class="font-serif text-2xl md:text-3xl text-white leading-[1.15] mb-4 group-hover:text-accent transition-colors">
+                {keynote.title}
+              </h3>
+              <p class="font-sans text-sm text-gray-400 leading-relaxed mb-8">
+                {keynote.provocation}
+              </p>
+              <div class="mt-auto pt-6 border-t border-white/5">
+                <span class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400 group-hover:text-accent transition-colors">
+                  Learn more &rarr;
+                </span>
+              </div>
+            </a>
+          ))}
+
+          <!-- Final cell — CTA -->
+          <div class="bg-black p-8 flex flex-col items-center justify-center text-center">
+            <p class="font-sans text-sm text-gray-400 leading-relaxed mb-6">
+              Every keynote is customized.<br />
+              The only way to know what Scott will do for <em>your</em> audience is to talk.
+            </p>
+            <a
+              href="/book-scott-bales-keynote-speaker"
+              class="inline-block font-sans text-xs tracking-[0.1em] uppercase px-6 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+            >
+              Start a Conversation
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CUSTOMIZATION NOTE
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5 py-16">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/40 mb-4">How It Works</p>
+        <p class="font-sans text-base text-gray-400 leading-relaxed max-w-2xl mx-auto">
+          All topics can be customized to industry vertical. Scott tailors 30–40% of content
+          to the specific audience, organization, or sector. Requires a 30-minute briefing
+          call minimum 3 weeks before event.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

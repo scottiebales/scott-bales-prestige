@@ -1,0 +1,46 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+  aspect?: '3/2' | '16/9' | '1/1' | '4/5';
+  class?: string;
+}
+
+const {
+  src,
+  alt,
+  aspect = '3/2',
+  class: className = '',
+} = Astro.props;
+---
+
+<figure class:list={['prestige-image', className]} style={`aspect-ratio: ${aspect};`}>
+  <img
+    src={src}
+    alt={alt}
+    loading="lazy"
+    decoding="async"
+    class="prestige-image__img"
+  />
+</figure>
+
+<style>
+  .prestige-image {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.063);
+    width: 100%;
+  }
+
+  .prestige-image__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(0.8) contrast(1.1);
+    transition: filter 0.5s ease;
+  }
+
+  .prestige-image:hover .prestige-image__img {
+    filter: grayscale(0) contrast(1);
+  }
+</style>

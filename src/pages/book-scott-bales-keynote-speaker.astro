@@ -1,0 +1,237 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Book Scott Bales — Keynote Speaker | Scott Bales"
+  description="One conversation. No pitch deck. Book Scott Bales for your next leadership event, executive offsite, or strategic briefing."
+>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO — Maximum whitespace. One sentence.
+       ════════════════════════════════════════════════════════ -->
+  <section class="min-h-[70vh] flex items-end px-8 pb-16">
+    <div class="swiss-grid w-full">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-6">Book</p>
+        <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05]">
+          One conversation.<br />
+          No pitch deck.
+        </h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SPLIT LAYOUT — Process + Form
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <!-- LEFT: The Path to the Stage -->
+      <div class="col-span-12 md:col-span-5 fade-in" style="grid-column: 1 / 6;">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-12">The Path to the Stage</p>
+
+        <div class="book-process space-y-12">
+
+          <!-- Step 1 -->
+          <div class="book-step">
+            <div class="flex items-baseline gap-4 mb-3">
+              <span class="font-sans text-xs text-white/15">01</span>
+              <h3 class="font-serif text-xl text-white">The Conversation</h3>
+            </div>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed ml-8">
+              A 15-minute scoping call. No slides. No pitch. Scott listens
+              to your event context, your audience, and the outcome you need.
+              This call determines whether the fit is right — for both sides.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="book-step">
+            <div class="flex items-baseline gap-4 mb-3">
+              <span class="font-sans text-xs text-white/15">02</span>
+              <h3 class="font-serif text-xl text-white">The Customization</h3>
+            </div>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed ml-8">
+              Scott tailors 30–40% of content to your specific industry,
+              organization, and audience. A 30-minute deep-dive briefing
+              3–4 weeks before the event ensures every reference, every
+              example, and every provocation lands.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="book-step">
+            <div class="flex items-baseline gap-4 mb-3">
+              <span class="font-sans text-xs text-white/15">03</span>
+              <h3 class="font-serif text-xl text-white">The Delivery</h3>
+            </div>
+            <p class="font-sans text-sm text-gray-400 leading-relaxed ml-8">
+              Final deck delivered 48 hours in advance. Sound check the day
+              before. Open stage, no podium, no teleprompter. 45–90 minutes
+              of strategic intervention your audience will not forget.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Engagement formats -->
+        <div class="mt-16 pt-8 border-t border-white/5">
+          <p class="font-sans text-xs tracking-[0.15em] uppercase text-white/30 mb-6">Engagement Formats</p>
+          <div class="space-y-4">
+            <div class="flex items-baseline justify-between">
+              <p class="font-sans text-sm text-white">Keynote</p>
+              <p class="font-sans text-sm text-gray-400">45–60 min</p>
+            </div>
+            <div class="flex items-baseline justify-between border-t border-white/5 pt-4">
+              <p class="font-sans text-sm text-white">Executive Briefing</p>
+              <p class="font-sans text-sm text-gray-400">60–90 min</p>
+            </div>
+            <div class="flex items-baseline justify-between border-t border-white/5 pt-4">
+              <p class="font-sans text-sm text-white">The Sage Workshop</p>
+              <p class="font-sans text-sm text-gray-400">Half-day</p>
+            </div>
+            <div class="flex items-baseline justify-between border-t border-white/5 pt-4">
+              <p class="font-sans text-sm text-white">Full Day</p>
+              <p class="font-sans text-sm text-gray-400">Keynote + Workshop + Fireside</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gutter -->
+      <div class="hidden md:block" style="grid-column: 6 / 7;"></div>
+
+      <!-- RIGHT: Booking form placeholder -->
+      <div class="col-span-12 md:col-span-6 mt-16 md:mt-0 fade-in" style="grid-column: 7 / 13;">
+        <div class="book-form-container border border-white/5 p-8 md:p-12 min-h-[500px] flex flex-col">
+          <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/30 mb-8">Start Here</p>
+
+          <form class="book-form flex flex-col gap-6 flex-1">
+            <div>
+              <label class="font-sans text-xs tracking-[0.1em] uppercase text-white/30 block mb-2" for="book-name">Name</label>
+              <input
+                type="text"
+                id="book-name"
+                name="name"
+                required
+                class="w-full bg-transparent border-b border-white/10 focus:border-white/40 text-white font-sans text-sm py-3 outline-none transition-colors placeholder:text-white/10"
+                placeholder="Your name"
+              />
+            </div>
+
+            <div>
+              <label class="font-sans text-xs tracking-[0.1em] uppercase text-white/30 block mb-2" for="book-email">Email</label>
+              <input
+                type="email"
+                id="book-email"
+                name="email"
+                required
+                class="w-full bg-transparent border-b border-white/10 focus:border-white/40 text-white font-sans text-sm py-3 outline-none transition-colors placeholder:text-white/10"
+                placeholder="you@organization.com"
+              />
+            </div>
+
+            <div>
+              <label class="font-sans text-xs tracking-[0.1em] uppercase text-white/30 block mb-2" for="book-org">Organization</label>
+              <input
+                type="text"
+                id="book-org"
+                name="organization"
+                class="w-full bg-transparent border-b border-white/10 focus:border-white/40 text-white font-sans text-sm py-3 outline-none transition-colors placeholder:text-white/10"
+                placeholder="Company or event name"
+              />
+            </div>
+
+            <div>
+              <label class="font-sans text-xs tracking-[0.1em] uppercase text-white/30 block mb-2" for="book-date">Event Date</label>
+              <input
+                type="text"
+                id="book-date"
+                name="event_date"
+                class="w-full bg-transparent border-b border-white/10 focus:border-white/40 text-white font-sans text-sm py-3 outline-none transition-colors placeholder:text-white/10"
+                placeholder="Approximate date or quarter"
+              />
+            </div>
+
+            <div>
+              <label class="font-sans text-xs tracking-[0.1em] uppercase text-white/30 block mb-2" for="book-message">What does your audience need to hear?</label>
+              <textarea
+                id="book-message"
+                name="message"
+                rows="4"
+                class="w-full bg-transparent border-b border-white/10 focus:border-white/40 text-white font-sans text-sm py-3 outline-none transition-colors resize-none placeholder:text-white/10"
+                placeholder="Brief context — audience, industry, desired outcome"
+              ></textarea>
+            </div>
+
+            <div class="mt-auto pt-6">
+              <button
+                type="submit"
+                class="w-full font-sans text-xs tracking-[0.15em] uppercase py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+              >
+                Start the Conversation
+              </button>
+              <p class="font-sans text-xs text-white/15 mt-4 text-center">
+                Response within 48 hours. No obligations.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       TRUST LINE — Minimal social proof
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5 py-12">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/10">
+          Microsoft &middot; Google &middot; Visa &middot; AIA &middot; Standard Chartered &middot; Vodafone
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       BUREAU LINK — Single high-contrast CTA
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-sm text-gray-400 leading-relaxed mb-2">
+          Representing a speaker bureau?
+        </p>
+        <p class="font-sans text-sm text-white leading-relaxed mb-8">
+          The full spec sheet — bios, rider, pricing, and assets — is ready.
+        </p>
+        <a
+          href="/bureau"
+          class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 bg-white text-black hover:bg-accent hover:text-black transition-colors"
+        >
+          Bureau Hub
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* Booking form — underline inputs, minimal chrome */
+  .book-form input:focus,
+  .book-form textarea:focus {
+    border-color: rgba(0, 240, 255, 0.3);
+  }
+
+  /* Step hover */
+  .book-step {
+    transition: padding-left 0.3s ease;
+  }
+
+  .book-step:hover {
+    padding-left: 4px;
+  }
+</style>

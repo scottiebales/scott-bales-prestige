@@ -1,0 +1,218 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const logoWall = [
+  'Microsoft', 'Google', 'Visa', 'Amazon',
+  'Standard Chartered', 'Deloitte', 'Vodafone', 'AIA',
+];
+---
+
+<BaseLayout
+  title="Proof — Client Testimonials & Results | Scott Bales"
+  description="What Microsoft, Google, Visa, Standard Chartered, and global leadership teams say after Scott Bales delivers. The evidence wall."
+>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO — Lead with the strongest voice
+       ════════════════════════════════════════════════════════ -->
+  <section class="proof-hero min-h-[80vh] flex items-center justify-center px-8 relative overflow-hidden">
+    <!-- Low-opacity background stage image -->
+    <div class="absolute inset-0 z-0" aria-hidden="true">
+      <img
+        src="/images/scott-bales-stage-wide.jpg"
+        alt=""
+        class="w-full h-full object-cover"
+        style="filter: grayscale(0.9) contrast(1.1); opacity: 0.12;"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black"></div>
+    </div>
+    <div class="swiss-grid w-full relative z-10">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-12">The Evidence</p>
+        <blockquote class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.1] text-white mb-8">
+          "Content and stage presence<br />
+          are <em>first class.</em>"
+        </blockquote>
+        <p class="font-sans text-sm tracking-[0.2em] uppercase text-gray-400/50">Microsoft</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       LOGO WALL — Low-opacity broadsheet authority
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5 py-16">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px">
+          {logoWall.map((name) => (
+            <div class="flex items-center justify-center py-10 px-6">
+              <span class="font-sans text-sm tracking-[0.25em] uppercase text-white/10 select-none">
+                {name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO QUOTE 2 — Brett King
+       ════════════════════════════════════════════════════════ -->
+  <section class="min-h-[60vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl lg:text-6xl leading-[1.1] text-white mb-8">
+          "Instinctually understands the mobile space<br />
+          better than <em>anyone else</em> in Asia."
+        </blockquote>
+        <p class="font-sans text-sm tracking-[0.2em] uppercase text-gray-400/50">Brett King</p>
+        <p class="font-sans text-xs text-gray-400/30 mt-2">Author of Bank 4.0 &middot; Founder of Moven</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       WALL OF AUTHORITY — Broadsheet testimonial grid
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-16">Wall of Authority</p>
+
+        <div class="proof-wall">
+
+          <!-- Row 1: Google + Visa -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <blockquote class="proof-cell border-b border-r-0 md:border-r border-white/5 p-8 md:p-12">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Google</p>
+              <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+                "It's tough to make talks in the Financial space exciting, and Scott delivered."
+              </p>
+            </blockquote>
+            <blockquote class="proof-cell border-b border-white/5 p-8 md:p-12">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Visa</p>
+              <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+                "Deep context, clever insights, and relevant thinking. Speaks with genuine passion."
+              </p>
+            </blockquote>
+          </div>
+
+          <!-- Row 2: Standard Chartered (full-width) -->
+          <blockquote class="proof-cell border-b border-white/5 p-8 md:p-12">
+            <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Standard Chartered</p>
+            <p class="font-serif text-2xl md:text-3xl text-white leading-relaxed max-w-3xl">
+              "Innovative thinker challenging conventional norms. Understanding of technology is profound."
+            </p>
+          </blockquote>
+
+          <!-- Row 3: Vodafone + AIA -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <blockquote class="proof-cell border-b border-r-0 md:border-r border-white/5 p-8 md:p-12">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Vodafone</p>
+              <p class="font-serif text-xl md:text-2xl text-white leading-relaxed mb-4">
+                "Very engaging and thought-provoking. We would readily recommend Scott for future events."
+              </p>
+              <p class="font-sans text-xs text-gray-400/30">Hart Wilcox, APAC NZ Gigabit Society Summit</p>
+            </blockquote>
+            <blockquote class="proof-cell border-b border-white/5 p-8 md:p-12">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">AIA</p>
+              <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+                "Challenged every assumption in the room. Left us with a framework we are still using six months later."
+              </p>
+            </blockquote>
+          </div>
+
+          <!-- Row 4: Deloitte + Amazon -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <blockquote class="proof-cell border-b border-r-0 md:border-r border-white/5 p-8 md:p-12">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Deloitte</p>
+              <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+                "Scott brings a rare combination of real operational experience and the ability to translate it into strategic clarity."
+              </p>
+            </blockquote>
+            <blockquote class="proof-cell border-b border-white/5 p-8 md:p-12">
+              <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Amazon</p>
+              <p class="font-serif text-xl md:text-2xl text-white leading-relaxed">
+                "Not a trends talk. A strategic intervention. Scott forced us to confront the consumer we had been designing around."
+              </p>
+            </blockquote>
+          </div>
+
+          <!-- Row 5: Full-width closing quote -->
+          <blockquote class="proof-cell p-8 md:p-12">
+            <p class="font-sans text-xs tracking-[0.2em] uppercase text-gray-400/30 mb-6">Microsoft</p>
+            <p class="font-serif text-2xl md:text-3xl text-white leading-relaxed max-w-3xl">
+              "Content and stage presence are first class."
+            </p>
+          </blockquote>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE NUMBERS — Stats strip
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5">
+    <div class="swiss-grid py-0">
+      <div class="content-col fade-in">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-px bg-white/5">
+          <div class="bg-black py-12 px-6 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">6</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400/30">Continents</p>
+          </div>
+          <div class="bg-black py-12 px-6 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">20+</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400/30">Years</p>
+          </div>
+          <div class="bg-black py-12 px-6 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">2</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400/30">Best-Sellers</p>
+          </div>
+          <div class="bg-black py-12 px-6 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">1</p>
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400/30">Framework</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CTA
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          The proof is in the room after Scott leaves.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-12">
+          Ask any of these organizations what happened next.
+        </p>
+        <a
+          href="/book-scott-bales-keynote-speaker"
+          class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+        >
+          Book Scott Bales
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* Proof page — Broadsheet aesthetic */
+  .proof-cell {
+    transition: background-color 0.3s ease;
+  }
+
+  .proof-cell:hover {
+    background-color: rgba(255, 255, 255, 0.01);
+  }
+</style>

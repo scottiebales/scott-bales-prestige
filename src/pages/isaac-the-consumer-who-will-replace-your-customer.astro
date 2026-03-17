@@ -1,0 +1,493 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PrestigeImage from '../components/PrestigeImage.astro';
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Are You Ready for Isaac? The Consumer Who Will Replace Your Customer",
+  "description": "Isaac is nineteen. He has never walked into a bank. He has never accepted a product that asked him to adapt. He evaluates every brand interaction against four criteria: Transparency, Autonomy, Immediacy, and Inclusion. Fail one, and he leaves — silently, permanently. Scott Bales' Isaac Readiness Model prepares leadership teams for the mobile-native consumer who is already inside their customer data.",
+  "author": { "@type": "Person", "name": "Scott Bales", "url": "https://scottbales.com" },
+  "about": [
+    { "@type": "DefinedTerm", "name": "Isaac (Digital Native)" },
+    { "@type": "DefinedTerm", "name": "The Generational Pincer Framework" }
+  ],
+  "keywords": "Isaac, digital native, mobile native, consumer behavior, Scott Bales, Generational Pincer, Isaac Readiness Model, transparency, autonomy, immediacy, inclusion"
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Who is Isaac in Scott Bales' Generational Pincer framework?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Isaac is Scott Bales' proprietary archetype for the mobile-native, social-native consumer. He is nineteen, has never walked into a bank, and evaluates every brand interaction against four criteria: Transparency (can I see how this decision was made?), Autonomy (can I control my data, attention, and time?), Immediacy (does this meet me where I am, right now?), and Inclusion (was this built for someone like me — or was I an afterthought?). Fail one criterion and Isaac leaves — silently, permanently, without complaint. He is the first half of the Generational Pincer: the current-reality consumer already inside your customer data, your employee pipeline, and your competitor's founding team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Isaac Readiness Model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Isaac Readiness Model is a proprietary diagnostic framework created by Scott Bales that evaluates an organization's preparedness for the mobile-native consumer across four pillars: Transparency (is your decision-making visible?), Autonomy (does your customer control the relationship?), Immediacy (do you meet them on their terms, in real time?), and Inclusion (was your product built for the edge case, not just the average?). Each pillar includes a Failure Signal — the silent indicator that Isaac has already left — and an Isaac Standard — the minimum bar he sets. Organizations use this model to audit their customer experience, product design, and workforce strategy against the consumer who is already judging them."
+      }
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Are You Ready for Isaac? The Consumer Who Will Replace Your Customer | Scott Bales"
+  description="Isaac is nineteen. He has never accepted a product that asked him to adapt. He evaluates every interaction against four criteria — and he does not give second chances."
+>
+
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} slot="head" />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO — Monochrome. Hard. Present tense.
+       ════════════════════════════════════════════════════════ -->
+  <section class="min-h-screen flex items-center justify-center px-8">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center">
+        <p class="font-sans text-xs tracking-[0.3em] uppercase text-white/40 mb-8 fade-in">The Current Reality</p>
+        <h1 class="font-serif text-5xl md:text-7xl lg:text-9xl leading-[1.0] mb-8 fade-in">
+          Isaac
+        </h1>
+        <p class="font-sans text-lg md:text-xl text-gray-400 max-w-xl mx-auto leading-relaxed mb-4 fade-in">
+          He is nineteen. He has never accepted a product<br />
+          that asked him to adapt to it.
+        </p>
+        <p class="font-sans text-base text-white/30 fade-in">
+          He is already inside your customer data.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE INTRODUCTION — Who Isaac is
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/40 mb-8">The Shift</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Isaac has never walked into a bank. He has never filled out a form
+          without asking why. He has never accepted a product that asked him
+          to adapt to it rather than the other way around.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-8">
+          He is not hypothetical. He is the demographic reality sitting in
+          your customer data, your employee pipeline, and your competitor's
+          founding team.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+          Isaac grew up in a culture where accessibility is not a compliance
+          checkbox but a baseline expectation. Where transparency is not a
+          brand value but a filtering mechanism. Where inclusion is not a
+          program — it is the minimum viable product.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       LIFESTYLE IMAGE — Mobile-first, high-contrast
+       ════════════════════════════════════════════════════════ -->
+  <section class="border-t border-white/5">
+    <div class="swiss-grid py-0">
+      <div class="content-col fade-in">
+        <PrestigeImage
+          src="/images/isaac-mobile-first-lifestyle.jpg"
+          alt="A young consumer navigating the world on mobile — the reality Isaac represents"
+          aspect="16/9"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE JENSON CONNECTION — Where Isaac came from
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/40 mb-8">The Origin</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Isaac grew up in Jenson's world. Not literally — Isaac does not have
+          Jenson's challenges. But he grew up in a culture that Jenson's
+          generation forced into existence.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-8">
+          Jenson required technology to include him. Isaac <em>expects</em> it.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+          That expectation is not an attitude. It is a market force. And every
+          organization that mistakes it for entitlement is already losing to
+          the one that recognized it as a design requirement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-white italic">
+          Jenson taught me who technology forgets.<br />
+          Isaac is what happens when that generation<br />
+          <span class="text-white/40">refuses to be forgotten.</span>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE PROBLEM — Preparing for the wrong thing
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/40 mb-8">The Blind Spot</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          The organizations I work with — the ones running AI strategies,
+          redesigning customer journeys, rethinking workforce models — are
+          preparing for a future defined by compute power, large language
+          models, and automation. They are right to prepare.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-8">
+          But they are preparing for the technology. They are not preparing
+          for Isaac.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+          Isaac does not care about your AI strategy. He cares whether your
+          AI strategy cares about him. He will not read your mission statement.
+          He will test it — silently, instantly, and without giving you a
+          second chance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE ISAAC READINESS MODEL — Four pillars
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/40 mb-4">The Isaac Readiness Model</p>
+        <h2 class="font-serif text-3xl md:text-5xl leading-[1.1] mb-6">
+          Four criteria. Zero tolerance.
+        </h2>
+        <p class="font-sans text-base text-gray-400 leading-relaxed mb-16 max-w-2xl">
+          Isaac evaluates every interaction against four criteria, whether
+          he knows it or not. Fail one, and he leaves. He does not complain.
+          He does not churn visibly. He simply never arrives.
+        </p>
+
+        <!-- 4-column structural blueprint -->
+        <div class="isaac-pillars grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-white/5">
+
+          <!-- Transparency -->
+          <div class="bg-black p-6 md:p-8 flex flex-col">
+            <div class="isaac-pillar-num font-sans text-xs text-white/15 mb-6">01</div>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-2">Transparency</h3>
+            <p class="font-sans text-sm text-white/30 italic mb-6">Can I see how this decision was made?</p>
+
+            <div class="mt-auto space-y-6">
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Failure Signal</p>
+                <p class="font-sans text-sm text-gray-400 leading-relaxed">
+                  Your algorithm recommended something Isaac did not ask for.
+                  He cannot see why. He does not ask. He closes the app and
+                  does not return. You will find this in your churn data six
+                  months from now — if you look.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Isaac Standard</p>
+                <p class="font-sans text-sm text-white leading-relaxed">
+                  Every decision visible. Every data point explained. Every
+                  recommendation traceable to a reason Isaac can verify
+                  himself.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Autonomy -->
+          <div class="bg-black p-6 md:p-8 flex flex-col">
+            <div class="isaac-pillar-num font-sans text-xs text-white/15 mb-6">02</div>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-2">Autonomy</h3>
+            <p class="font-sans text-sm text-white/30 italic mb-6">Can I control what happens to my data, my attention, my time?</p>
+
+            <div class="mt-auto space-y-6">
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Failure Signal</p>
+                <p class="font-sans text-sm text-gray-400 leading-relaxed">
+                  Your onboarding requires permissions Isaac did not consent
+                  to understand. Your notifications interrupt on your schedule,
+                  not his. Your data policy is forty pages of legal text that
+                  assumes he will not read it. He did. He left.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Isaac Standard</p>
+                <p class="font-sans text-sm text-white leading-relaxed">
+                  Isaac owns the relationship. He sets the cadence. He
+                  controls the data. He decides when, where, and whether
+                  you have access to his attention.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Immediacy -->
+          <div class="bg-black p-6 md:p-8 flex flex-col">
+            <div class="isaac-pillar-num font-sans text-xs text-white/15 mb-6">03</div>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-2">Immediacy</h3>
+            <p class="font-sans text-sm text-white/30 italic mb-6">Does this meet me where I am, right now, on my terms?</p>
+
+            <div class="mt-auto space-y-6">
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Failure Signal</p>
+                <p class="font-sans text-sm text-gray-400 leading-relaxed">
+                  Your product requires Isaac to wait. For an approval. For
+                  a callback. For a page to load. For a process designed
+                  around your operational convenience rather than his
+                  expectation of now. He is already gone.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Isaac Standard</p>
+                <p class="font-sans text-sm text-white leading-relaxed">
+                  Real time. Right context. Right device. Isaac's definition
+                  of "fast" is not your benchmark — it is whatever his last
+                  best experience was, across any category.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inclusion -->
+          <div class="bg-black p-6 md:p-8 flex flex-col">
+            <div class="isaac-pillar-num font-sans text-xs text-white/15 mb-6">04</div>
+            <h3 class="font-serif text-2xl text-white leading-snug mb-2">Inclusion</h3>
+            <p class="font-sans text-sm text-white/30 italic mb-6">Was this built for someone like me — or was I an afterthought?</p>
+
+            <div class="mt-auto space-y-6">
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Failure Signal</p>
+                <p class="font-sans text-sm text-gray-400 leading-relaxed">
+                  Your product works — for the user you designed it for.
+                  Isaac is not that user. He notices the gap instantly. He
+                  does not file a complaint. He does not leave a review.
+                  He tells no one. He simply goes somewhere that saw him
+                  first.
+                </p>
+              </div>
+              <div class="pt-6 border-t border-white/5">
+                <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/20 mb-2">The Isaac Standard</p>
+                <p class="font-sans text-sm text-white leading-relaxed">
+                  Built for the edge, not the average. If Jenson cannot use
+                  it, Isaac will not trust it. Inclusion is not a feature —
+                  it is the architecture.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote — The cost -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-white italic">
+          Isaac does not churn.<br />
+          He simply <span class="text-white/30">never arrives.</span>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE COST OF GETTING IT WRONG
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/40 mb-8">The Cost</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Isaac is not a future problem. He is a present-tense revenue event.
+          He is the reason your acquisition cost is climbing. The reason your
+          retention curve is flattening. The reason your NPS is high among
+          customers over forty and declining among everyone else.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          He is not leaving because your product is bad. He is leaving because
+          your product was built for someone who is not him — and he can tell
+          in under three seconds.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-white/5 mt-12">
+          <div class="bg-black p-8 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">3s</p>
+            <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/30">Time to judgment</p>
+          </div>
+          <div class="bg-black p-8 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">0</p>
+            <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/30">Second chances</p>
+          </div>
+          <div class="bg-black p-8 text-center">
+            <p class="font-serif text-4xl md:text-5xl text-white mb-2">Silent</p>
+            <p class="font-sans text-xs tracking-[0.1em] uppercase text-white/30">Departure signal</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE SUCCESSOR — Bridge to Esther
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-white/40 mb-8">The Successor</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Isaac is the shift your organization is still trying to absorb. He
+          is the consumer who turned every assumption about loyalty, patience,
+          and brand equity into a liability.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-8">
+          And behind him — three years old right now — is <span class="text-accent">Esther</span>.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Isaac chose to leave. <span class="text-accent">Esther</span> will never arrive in the first
+          place. Her agent will decide for her — in milliseconds — whether
+          your organization exists in her world.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+          If you are not ready for Isaac, you have no chance with
+          <span class="text-accent">Esther</span>. And together, they form a pincer that no
+          strategy deck accounts for.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statement — full viewport -->
+  <section class="min-h-[60vh] flex items-center justify-center px-8 border-t border-white/5">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <p class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-white">
+          <strong>Isaac defined the shift.</strong>
+        </p>
+        <p class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-white/30 mt-4">
+          <strong><span class="text-accent">Esther</span> is the outcome.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       SOCIAL PROOF
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <blockquote class="border-l border-white/10 pl-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-white/30 mb-4">Google</p>
+            <p class="font-serif text-xl text-white leading-relaxed">
+              "It's tough to make talks in the Financial space exciting, and Scott delivered."
+            </p>
+          </blockquote>
+          <blockquote class="border-l border-white/10 pl-6">
+            <p class="font-sans text-xs tracking-[0.15em] uppercase text-white/30 mb-4">Vodafone</p>
+            <p class="font-serif text-xl text-white leading-relaxed">
+              "Very engaging and thought-provoking. We would readily recommend Scott for future events."
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CTA — Direct. No warmth.
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-white/5">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          Your product was built for a customer who is leaving.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-12">
+          Isaac is the one who decides whether you still matter.
+        </p>
+        <p class="font-serif text-3xl md:text-4xl text-white mb-12">Are you ready?</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="/book-scott-bales-keynote-speaker"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 border border-white/20 text-white hover:bg-white hover:text-black transition-colors"
+          >
+            Book the Isaac Keynote
+          </a>
+          <a
+            href="/esther-and-the-agentic-future"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 text-gray-400 hover:text-accent transition-colors"
+          >
+            Meet Esther &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ── Isaac Page — Monochrome, aggressive, structural ── */
+
+  /* Pillar number — faint structural marker */
+  .isaac-pillar-num {
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.1em;
+  }
+
+  /* Blueprint grid lines on hover */
+  .isaac-pillars > div {
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+
+  .isaac-pillars > div:hover {
+    background-color: rgba(255, 255, 255, 0.015);
+  }
+
+  /* Subtle left accent on pillar hover */
+  .isaac-pillars > div::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0);
+    transition: background 0.3s ease;
+  }
+
+  .isaac-pillars > div:hover::before {
+    background: rgba(255, 255, 255, 0.1);
+  }
+</style>

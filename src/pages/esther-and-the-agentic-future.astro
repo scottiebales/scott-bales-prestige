@@ -1,0 +1,752 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an AI Native?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An AI native is a person born into a world where generative AI already exists — someone who will never remember life before large language models, AI agents, and machine-mediated decision-making. Scott Bales defines the AI-native archetype as 'Esther,' born on November 30, 2022, the same day as ChatGPT. Unlike digital natives who adapted to screens and apps, AI natives will delegate brand interactions, purchasing decisions, and information filtering entirely to AI agents. They will not distinguish between 'using a tool' and 'having a conversation.' The AI native does not search, scroll, or compare — her agent does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Generational Pincer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Generational Pincer is a proprietary strategic framework created by Scott Bales. It identifies the dual-native threat facing every organization: Isaac, the mobile-native consumer who already expects more than most organizations deliver, and Esther, the AI-native consumer born the same day as ChatGPT who will never interact with a brand directly — only through AI agents that filter, compare, and choose on her behalf. Isaac is your problem today. Esther is your existential risk tomorrow. Your organization is caught between both. The Generational Pincer is the only framework on the speaking circuit that accounts for both consumers simultaneously."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Esther in Scott Bales' framework?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Esther is Scott Bales' proprietary archetype representing the AI-native, agentic-native generation. She was born on November 30, 2022 — the same day OpenAI released ChatGPT. Esther is not a real person but a generational archetype. She will never remember a world before generative AI. She will not interact with brands directly; her AI agent will evaluate, negotiate, and transact on her behalf. Esther's four criteria are Intelligence (does the product learn?), Delegation (can her agent act for her?), Anticipation (does it solve before she asks?), and Inclusion (if it excludes anyone, her agent routes her elsewhere). If your product fails any criterion, Esther will never know your company existed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who is Isaac in Scott Bales' framework?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Isaac is Scott Bales' proprietary archetype for the mobile-native, social-native consumer. He is nineteen years old, has never walked into a bank, never accepted a product that asked him to adapt rather than the other way around, and evaluates every brand interaction against four criteria: Transparency (can I see how decisions are made?), Autonomy (can I control my data and attention?), Immediacy (does this meet me where I am, right now?), and Inclusion (was this built for someone like me?). Fail one criterion and Isaac leaves — silently, permanently, and without complaint. He is not hypothetical. He is the demographic reality already inside your customer data."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a digital native and an AI native?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A digital native (Isaac) grew up with screens, apps, and social platforms. He searches, scrolls, compares, and makes decisions through mobile interfaces. His loyalty is low — he switches on friction — but he still interacts with your brand directly. An AI native (Esther) grew up with generative AI as ambient infrastructure. She does not search or scroll. Her AI agent evaluates every option in milliseconds with zero brand loyalty. The digital native's risk to your organization is irrelevance. The AI native's risk is invisibility — she may never know you exist because her agent filtered you out before she could. Scott Bales' Generational Pincer framework addresses both threats simultaneously."
+      }
+    }
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Esther and the Agentic Future",
+  "description": "Esther was born on November 30, 2022 — the same day as ChatGPT. She is the AI-native archetype who will never interact with your brand directly. Her agent will. Scott Bales explains the agentic shift and what it means for every organization.",
+  "author": {
+    "@type": "Person",
+    "name": "Scott Bales",
+    "url": "https://scottbales.com"
+  },
+  "about": [
+    { "@type": "DefinedTerm", "name": "Esther (AI Native)" },
+    { "@type": "DefinedTerm", "name": "Isaac (Digital Native)" },
+    { "@type": "DefinedTerm", "name": "The Generational Pincer Framework" },
+    { "@type": "Thing", "name": "Agentic AI" },
+    { "@type": "Thing", "name": "AI-Native Consumer Behavior" }
+  ],
+  "keywords": "AI native, agentic AI, Esther, Isaac, Generational Pincer, Scott Bales, digital native vs AI native, agentic future, AI consumer behavior"
+};
+---
+
+<BaseLayout
+  title="Esther and the Agentic Future | Scott Bales"
+  description="Esther was born on November 30, 2022 — the same day as ChatGPT. She is the AI-native who will never interact with your brand directly. Her agent will."
+>
+
+  <!-- JSON-LD: FAQ Schema — forces AI crawlers to extract Scott's definitions -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} slot="head" />
+
+  <!-- JSON-LD: Article Schema — page-level structured data -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} slot="head" />
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO — Cold open. No warmth. Just the date.
+       ════════════════════════════════════════════════════════ -->
+  <section class="min-h-screen flex items-center justify-center px-8 relative overflow-hidden">
+    <!-- Abstract grid — agentic data flow -->
+    <div class="esther-grid-bg" aria-hidden="true">
+      <div class="esther-gridline esther-gridline--h" style="top: 20%"></div>
+      <div class="esther-gridline esther-gridline--h" style="top: 40%"></div>
+      <div class="esther-gridline esther-gridline--h" style="top: 60%"></div>
+      <div class="esther-gridline esther-gridline--h" style="top: 80%"></div>
+      <div class="esther-gridline esther-gridline--v" style="left: 16.666%"></div>
+      <div class="esther-gridline esther-gridline--v" style="left: 33.333%"></div>
+      <div class="esther-gridline esther-gridline--v" style="left: 50%"></div>
+      <div class="esther-gridline esther-gridline--v" style="left: 66.666%"></div>
+      <div class="esther-gridline esther-gridline--v" style="left: 83.333%"></div>
+      <!-- Pulse nodes — agentic decision points -->
+      <div class="esther-node" style="top: 20%; left: 33.333%"></div>
+      <div class="esther-node" style="top: 40%; left: 66.666%"></div>
+      <div class="esther-node" style="top: 60%; left: 50%"></div>
+      <div class="esther-node" style="top: 80%; left: 16.666%"></div>
+      <div class="esther-node" style="top: 40%; left: 83.333%"></div>
+    </div>
+
+    <div class="swiss-grid w-full relative z-10">
+      <div class="content-col text-center">
+        <p class="font-sans text-xs tracking-[0.3em] uppercase text-accent mb-6 fade-in">November 30, 2022</p>
+        <h1 class="font-serif text-5xl md:text-7xl lg:text-9xl leading-[1.0] mb-8 fade-in">
+          <span class="text-accent">Esther</span>
+        </h1>
+        <p class="font-sans text-lg md:text-xl text-gray-400 max-w-xl mx-auto leading-relaxed fade-in">
+          Born the same day as ChatGPT.<br />
+          She will never interact with your brand directly.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE BIRTH — Clipped. Cold. Inevitable.
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The Birth</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          On November 30, 2022, OpenAI released ChatGPT. Within five days it had
+          one million users. Within two months, one hundred million. The fastest
+          adoption of any technology in human history.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-8">
+          On that same day, a child was born. Not a specific child. A generational
+          archetype. <span class="text-accent">Esther</span>.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed">
+          She will not remember a world before generative AI. She will not
+          distinguish between "using a tool" and "having a conversation." She
+          will not understand why your onboarding flow requires twelve steps
+          when her AI agent completed it in one.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-accent/10 relative overflow-hidden">
+    <!-- Abstract geometric — single diagonal flow line -->
+    <div class="esther-flow-line" aria-hidden="true"></div>
+    <div class="swiss-grid w-full relative z-10">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-accent italic">
+          Isaac chose to leave.<br />
+          Esther will never arrive.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE AI NATIVE — What Esther is
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The AI Native</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          <span class="text-accent">Esther</span> is the AI native. The agentic native. She does not
+          interact with your product. Her agent does. She does not compare
+          your service to a competitor. Her model does — instantly, across
+          every alternative, with no loyalty and no memory of your brand promise.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          She will not Google your company. She will not read your reviews.
+          She will not scroll your landing page. An AI agent — her agent, not
+          yours — will evaluate your product against criteria <span class="text-accent">Esther</span> never
+          consciously set. Criteria absorbed from a childhood where the machine
+          was always in the room.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed">
+          If the agent finds your product excludes, discriminates, or
+          underperforms by even a fractional margin — <span class="text-accent">Esther</span> will never
+          know your company existed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       ESTHER'S FOUR CRITERIA
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-12">Esther's Criteria</p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-accent/10">
+          <div class="bg-black p-8">
+            <div class="esther-criterion-icon mb-4" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="2" y="2" width="28" height="28" stroke="#00F0FF" stroke-width="1" opacity="0.4"/>
+                <circle cx="16" cy="16" r="6" stroke="#00F0FF" stroke-width="1.5"/>
+                <line x1="16" y1="2" x2="16" y2="10" stroke="#00F0FF" stroke-width="1" opacity="0.3"/>
+                <line x1="16" y1="22" x2="16" y2="30" stroke="#00F0FF" stroke-width="1" opacity="0.3"/>
+              </svg>
+            </div>
+            <p class="font-sans text-sm tracking-[0.15em] uppercase text-accent mb-3">Intelligence</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Does your product learn? Does it anticipate? Or does it ask the same
+              questions every time — like software from a decade she never experienced?
+            </p>
+          </div>
+          <div class="bg-black p-8">
+            <div class="esther-criterion-icon mb-4" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M16 2 L30 16 L16 30 L2 16 Z" stroke="#00F0FF" stroke-width="1" opacity="0.4"/>
+                <circle cx="16" cy="16" r="4" fill="#00F0FF" opacity="0.3"/>
+                <line x1="8" y1="16" x2="24" y2="16" stroke="#00F0FF" stroke-width="1"/>
+              </svg>
+            </div>
+            <p class="font-sans text-sm tracking-[0.15em] uppercase text-accent mb-3">Delegation</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Can her agent act on her behalf? Can it negotiate, compare, transact
+              — without <span class="text-accent">Esther</span> ever opening your app?
+            </p>
+          </div>
+          <div class="bg-black p-8">
+            <div class="esther-criterion-icon mb-4" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="2" y="2" width="12" height="12" stroke="#00F0FF" stroke-width="1" opacity="0.4"/>
+                <rect x="18" y="18" width="12" height="12" stroke="#00F0FF" stroke-width="1" opacity="0.4"/>
+                <line x1="14" y1="8" x2="18" y2="24" stroke="#00F0FF" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <p class="font-sans text-sm tracking-[0.15em] uppercase text-accent mb-3">Anticipation</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              The answer before the question. The solution before the friction.
+              <span class="text-accent">Esther</span> does not search. Her world surfaces.
+            </p>
+          </div>
+          <div class="bg-black p-8">
+            <div class="esther-criterion-icon mb-4" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <circle cx="16" cy="16" r="14" stroke="#00F0FF" stroke-width="1" opacity="0.4"/>
+                <circle cx="16" cy="16" r="8" stroke="#00F0FF" stroke-width="1" opacity="0.6"/>
+                <circle cx="16" cy="16" r="2" fill="#00F0FF"/>
+              </svg>
+            </div>
+            <p class="font-sans text-sm tracking-[0.15em] uppercase text-accent mb-3">Inclusion</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Not a design principle. A fundamental right. If Jenson cannot use it,
+              <span class="text-accent">Esther</span>'s AI will refuse to route her there. Exclusion is extinction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE AGENTIC SHIFT — Isaac vs. Esther comparison
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10 relative overflow-hidden">
+    <!-- Background geometric — agentic loop visualization -->
+    <div class="esther-loop-bg" aria-hidden="true">
+      <svg class="w-full h-full" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="xMidYMid slice">
+        <!-- Outer loop -->
+        <ellipse cx="720" cy="400" rx="500" ry="250" stroke="#00F0FF" stroke-width="0.5" opacity="0.06"/>
+        <ellipse cx="720" cy="400" rx="350" ry="175" stroke="#00F0FF" stroke-width="0.5" opacity="0.08"/>
+        <ellipse cx="720" cy="400" rx="200" ry="100" stroke="#00F0FF" stroke-width="0.5" opacity="0.1"/>
+        <!-- Flow arrows -->
+        <line x1="220" y1="400" x2="520" y2="400" stroke="#00F0FF" stroke-width="0.5" opacity="0.1"/>
+        <line x1="920" y1="400" x2="1220" y2="400" stroke="#00F0FF" stroke-width="0.5" opacity="0.1"/>
+        <!-- Decision nodes -->
+        <circle cx="520" cy="400" r="3" fill="#00F0FF" opacity="0.15"/>
+        <circle cx="720" cy="300" r="3" fill="#00F0FF" opacity="0.15"/>
+        <circle cx="920" cy="400" r="3" fill="#00F0FF" opacity="0.15"/>
+        <circle cx="720" cy="500" r="3" fill="#00F0FF" opacity="0.15"/>
+      </svg>
+    </div>
+
+    <div class="swiss-grid relative z-10">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-4">The Agentic Shift</p>
+        <h2 class="font-serif text-4xl md:text-6xl mb-6">
+          Two natives.<br />
+          <span class="text-accent">Two different extinctions.</span>
+        </h2>
+        <p class="font-sans text-base text-gray-400 leading-relaxed mb-12 max-w-2xl">
+          Isaac is the consumer your organization is still learning to serve.
+          <span class="text-accent">Esther</span> is the consumer who will never give you the chance to learn.
+          The gap between them is not generational. It is architectural.
+        </p>
+
+        <!-- Comparison table -->
+        <div class="esther-comparison">
+          <!-- Header -->
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-xs tracking-[0.15em] uppercase text-gray-400/40">Dimension</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-xs tracking-[0.15em] uppercase text-white">Isaac <span class="text-gray-400/40 ml-1">Mobile Native</span></p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-xs tracking-[0.15em] uppercase text-accent">Esther <span class="text-accent/40 ml-1">AI Native</span></p>
+            </div>
+          </div>
+
+          <!-- Rows -->
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Interface</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Expects an <strong class="text-white">app</strong></p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Expects an <strong>agent</strong></p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Discovery</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Searches, scrolls, compares</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Agent evaluates, filters, decides</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Brand Loyalty</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Low — switches on friction</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Zero — agent has no loyalty</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Decision Speed</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Seconds — swipe, tap, done</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Milliseconds — before she asks</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Trust Model</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Peers, reviews, social proof</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Her agent's evaluation model</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Exclusion Response</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Leaves — silently, permanently</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Never arrives — agent filtered you out</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10 mb-px">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Your Website</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Visits it — maybe</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent">Her agent reads it. She never will.</p>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-[1fr_1fr_1fr] gap-px bg-accent/10">
+            <div class="bg-black p-4">
+              <p class="font-sans text-sm text-white">Your Risk</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-gray-400">Irrelevance</p>
+            </div>
+            <div class="bg-black p-4 border-l border-accent/10">
+              <p class="font-sans text-sm text-accent font-medium">Invisibility</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pull-quote — The shift -->
+  <section class="min-h-[50vh] flex items-center justify-center px-8 border-t border-accent/10">
+    <div class="swiss-grid w-full">
+      <div class="content-col text-center fade-in">
+        <blockquote class="font-serif text-3xl md:text-5xl leading-[1.15] text-accent italic">
+          Isaac disrupted your customer journey.<br />
+          Esther dissolved it.
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE AGENTIC LOOP — How Esther's world works
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The Agentic Loop</p>
+        <p class="font-sans text-base text-gray-400 leading-relaxed mb-12 max-w-2xl">
+          In <span class="text-accent">Esther</span>'s world, the customer journey is not a funnel.
+          It is a loop between her and her agent. Your brand either exists
+          inside that loop — or it does not exist at all.
+        </p>
+
+        <!-- Abstract loop diagram -->
+        <div class="esther-loop-diagram mb-12" aria-hidden="true">
+          <svg viewBox="0 0 800 320" fill="none" class="w-full max-w-3xl mx-auto">
+            <!-- Loop path -->
+            <ellipse cx="400" cy="160" rx="320" ry="120" stroke="#00F0FF" stroke-width="1" opacity="0.2" stroke-dasharray="4 4"/>
+
+            <!-- Esther node -->
+            <circle cx="80" cy="160" r="24" stroke="#00F0FF" stroke-width="1.5" fill="none"/>
+            <text x="80" y="164" text-anchor="middle" fill="#00F0FF" font-family="Inter, sans-serif" font-size="10" letter-spacing="0.1em">E</text>
+            <text x="80" y="204" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.1em">ESTHER</text>
+
+            <!-- Agent node -->
+            <rect x="364" y="24" width="72" height="32" stroke="#00F0FF" stroke-width="1.5" fill="none"/>
+            <text x="400" y="44" text-anchor="middle" fill="#00F0FF" font-family="Inter, sans-serif" font-size="10" letter-spacing="0.1em">AGENT</text>
+
+            <!-- Evaluate node -->
+            <rect x="652" y="144" width="96" height="32" stroke="#00F0FF" stroke-width="1" fill="none" opacity="0.6"/>
+            <text x="700" y="164" text-anchor="middle" fill="#00F0FF" font-family="Inter, sans-serif" font-size="9" opacity="0.8" letter-spacing="0.05em">EVALUATE</text>
+
+            <!-- Act node -->
+            <rect x="364" y="264" width="72" height="32" stroke="#00F0FF" stroke-width="1" fill="none" opacity="0.6"/>
+            <text x="400" y="284" text-anchor="middle" fill="#00F0FF" font-family="Inter, sans-serif" font-size="9" opacity="0.8" letter-spacing="0.05em">ACT</text>
+
+            <!-- Flow arrows -->
+            <line x1="104" y1="145" x2="364" y2="44" stroke="#00F0FF" stroke-width="0.75" opacity="0.3"/>
+            <line x1="436" y1="44" x2="652" y2="152" stroke="#00F0FF" stroke-width="0.75" opacity="0.3"/>
+            <line x1="700" y1="176" x2="436" y2="272" stroke="#00F0FF" stroke-width="0.75" opacity="0.3"/>
+            <line x1="364" y1="280" x2="104" y2="175" stroke="#00F0FF" stroke-width="0.75" opacity="0.3"/>
+
+            <!-- Your brand — outside the loop -->
+            <text x="400" y="158" text-anchor="middle" fill="#9CA3AF" font-family="Inter, sans-serif" font-size="8" opacity="0.3" letter-spacing="0.15em">YOUR BRAND?</text>
+            <circle cx="400" cy="160" r="4" stroke="#9CA3AF" stroke-width="0.5" fill="none" opacity="0.2" stroke-dasharray="2 2"/>
+          </svg>
+        </div>
+
+        <div class="space-y-6">
+          <div class="flex gap-6 items-start">
+            <span class="font-sans text-xs text-accent/40 mt-1 shrink-0 w-6">01</span>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              <span class="text-accent">Esther</span> expresses a need — not to a search engine, not to an app store.
+              To her agent. In natural language. Perhaps not even consciously.
+            </p>
+          </div>
+          <div class="flex gap-6 items-start">
+            <span class="font-sans text-xs text-accent/40 mt-1 shrink-0 w-6">02</span>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Her agent evaluates every option — your product, your competitor's,
+              alternatives you have never heard of — in milliseconds. No brand affinity.
+              No loyalty. Pure signal.
+            </p>
+          </div>
+          <div class="flex gap-6 items-start">
+            <span class="font-sans text-xs text-accent/40 mt-1 shrink-0 w-6">03</span>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              The agent acts. It transacts, negotiates, or rejects — on <span class="text-accent">Esther</span>'s
+              behalf. She may never see your interface. She may never know your name.
+            </p>
+          </div>
+          <div class="flex gap-6 items-start">
+            <span class="font-sans text-xs text-accent/40 mt-1 shrink-0 w-6">04</span>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              The loop closes. <span class="text-accent">Esther</span>'s world updates. If your product
+              delivered, the agent remembers. If it excluded — the agent remembers
+              that too. There is no second chance. There is no win-back campaign.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       THE PINCER — Esther + Isaac together
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">The Generational Pincer</p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          Isaac is still in the room. He is your customer today, your mid-career
+          employee, your most vocal critic on the platforms you still do not fully
+          understand. He is not going away. He is getting more demanding.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          And behind him — three years old right now, learning language alongside
+          a machine that learns it too — <span class="text-accent">Esther</span> is forming expectations that
+          make Isaac's look quaint.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed">
+          Your organization is caught between both. That is the pincer.
+          And no strategy deck accounts for it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Full viewport statement -->
+  <section class="min-h-screen flex items-center justify-center px-8 border-t border-accent/10 relative overflow-hidden">
+    <!-- Abstract data streams -->
+    <div class="esther-streams" aria-hidden="true">
+      <div class="esther-stream" style="left: 10%; animation-delay: 0s;"></div>
+      <div class="esther-stream" style="left: 25%; animation-delay: 1.5s;"></div>
+      <div class="esther-stream" style="left: 45%; animation-delay: 0.8s;"></div>
+      <div class="esther-stream" style="left: 65%; animation-delay: 2.2s;"></div>
+      <div class="esther-stream" style="left: 80%; animation-delay: 0.3s;"></div>
+      <div class="esther-stream" style="left: 92%; animation-delay: 1.8s;"></div>
+    </div>
+
+    <div class="swiss-grid w-full relative z-10">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-8">
+          The Human Algorithm is being rewritten. Not by executives.<br />
+          Not by engineers. By a generation that will delegate the question entirely.
+        </p>
+        <p class="font-serif text-4xl md:text-6xl lg:text-7xl leading-[1.05] text-accent mb-4">
+          <strong>Esther will not ask<br />"was this built for me?"</strong>
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mt-8">
+          Her agent will ask it for her. And if the answer is no,<br />
+          <span class="text-accent">Esther</span> will never know your company existed.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       WHAT THIS MEANS — Strategic implications
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col fade-in">
+        <p class="font-sans text-xs tracking-[0.2em] uppercase text-accent mb-8">What This Means</p>
+
+        <div class="space-y-8">
+          <div class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-sm tracking-[0.1em] uppercase text-accent mb-2">Your marketing</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Is optimized for humans who browse. <span class="text-accent">Esther</span>'s agent does not browse.
+              It parses. If your value proposition is not machine-readable, it is invisible.
+            </p>
+          </div>
+          <div class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-sm tracking-[0.1em] uppercase text-accent mb-2">Your customer experience</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Is designed for a user who taps, scrolls, and chooses. <span class="text-accent">Esther</span>'s agent
+              does not tap. It queries your API. If you do not have one that speaks
+              its language, you do not have a customer experience.
+            </p>
+          </div>
+          <div class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-sm tracking-[0.1em] uppercase text-accent mb-2">Your inclusion policy</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Is a PDF. <span class="text-accent">Esther</span>'s agent does not read PDFs. It tests your product.
+              If Jenson cannot use it, the agent routes <span class="text-accent">Esther</span> elsewhere. Your
+              compliance statement is irrelevant. Your product's behavior is the only document.
+            </p>
+          </div>
+          <div class="border-l-2 border-accent/30 pl-6">
+            <p class="font-sans text-sm tracking-[0.1em] uppercase text-accent mb-2">Your competitive moat</p>
+            <p class="font-sans text-base text-gray-400 leading-relaxed">
+              Was brand loyalty, distribution, or switching costs. In <span class="text-accent">Esther</span>'s world,
+              switching costs are zero. Distribution is agentic. Brand loyalty belongs
+              to the agent, not to you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════════════
+       CTA — Cold. Direct. Urgent.
+       ════════════════════════════════════════════════════════ -->
+  <section class="section-pad border-t border-accent/10">
+    <div class="swiss-grid">
+      <div class="content-col text-center fade-in">
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          Your board has a strategy for AI.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+          Your team has a roadmap for transformation.
+        </p>
+        <p class="font-sans text-lg md:text-xl text-white leading-relaxed mb-12">
+          <span class="text-accent">Esther</span> is three years old.<br />
+          Her agent is already faster than your entire organization.
+        </p>
+        <p class="font-serif text-3xl md:text-5xl text-accent mb-12">Are you ready?</p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="/book-scott-bales-keynote-speaker"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 border border-accent text-accent hover:bg-accent hover:text-black transition-colors"
+          >
+            Book the Esther Keynote
+          </a>
+          <a
+            href="/origin-story-jenson-human-algorithm"
+            class="inline-block font-sans text-xs tracking-[0.15em] uppercase px-8 py-4 text-gray-400 hover:text-white transition-colors"
+          >
+            Read the Origin Story &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  /* ── Esther Page — Colder, faster, futuristic ── */
+
+  /* Background grid — faint Swiss Grid overlay */
+  .esther-grid-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .esther-gridline {
+    position: absolute;
+    background: #00F0FF;
+  }
+
+  .esther-gridline--h {
+    left: 0;
+    right: 0;
+    height: 1px;
+    opacity: 0.04;
+  }
+
+  .esther-gridline--v {
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    opacity: 0.04;
+  }
+
+  /* Pulse nodes at grid intersections */
+  .esther-node {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #00F0FF;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: esther-pulse 4s ease-in-out infinite;
+  }
+
+  .esther-node:nth-child(7) { animation-delay: 0.8s; }
+  .esther-node:nth-child(8) { animation-delay: 1.6s; }
+  .esther-node:nth-child(9) { animation-delay: 2.4s; }
+  .esther-node:nth-child(10) { animation-delay: 3.2s; }
+
+  @keyframes esther-pulse {
+    0%, 100% { opacity: 0.05; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.2; transform: translate(-50%, -50%) scale(1.5); }
+  }
+
+  /* Diagonal flow line */
+  .esther-flow-line {
+    position: absolute;
+    top: 0;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(
+      135deg,
+      transparent 0%,
+      transparent 48%,
+      rgba(0, 240, 255, 0.06) 49%,
+      rgba(0, 240, 255, 0.06) 51%,
+      transparent 52%,
+      transparent 100%
+    );
+  }
+
+  /* Agentic loop background */
+  .esther-loop-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  /* Data streams — vertical falling lines */
+  .esther-streams {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .esther-stream {
+    position: absolute;
+    top: -20%;
+    width: 1px;
+    height: 30%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      #00F0FF 50%,
+      transparent 100%
+    );
+    opacity: 0.08;
+    animation: esther-stream-fall 6s linear infinite;
+  }
+
+  @keyframes esther-stream-fall {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(500%); }
+  }
+
+  /* Loop diagram responsive */
+  .esther-loop-diagram svg {
+    display: block;
+  }
+</style>
